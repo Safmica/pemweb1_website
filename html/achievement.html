@@ -5,52 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../src/output.css" rel="stylesheet">
     <link rel="icon" href="../assets/head-logo.webp" type="image/x-icon"> 
-    <style>
-        #content {
-            opacity: 0;
-            animation: fadeIn 4s forwards 10s;
-        }
-
-        @keyframes fadeIn {
-            to {
-                opacity: 1;
-            }
-        }
-
-        #splash {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-        }
-
-        nav, #content {
-            position: relative; 
-            z-index: 10;
-        }
-
-        .hover-customRed:hover {
-            color: #ff0000 !important;
-        }
-        .hover-customYellow:hover {
-            color: #ffff00 !important;
-        }
-        .hover-customGreen:hover {
-            color: #00ff00 !important;
-        }
-        .hover-customBlue:hover {
-            color: #0000ff !important;
-        }
-        
-        .menu-item:hover {
-            color: #ff0000;
-        }
-        .dropdown-item:hover {
-            color: #00ff00;
-        }
-    </style>
 </head>
 <body>
     <nav class="bg-white border-gray-200">
@@ -119,3 +73,13 @@
             </div>      
         </div>      
     </nav>
+    <section class="relative flex flex-col items-center justify-center">
+        <div id="custom-controls-gallery" class="relative w-full" data-carousel="slide">
+            <img src="../assets/achievement-1.jpg" alt="hogwarts">
+        </div>
+        <div class="bg-white w-[500px] h-[200px] flex items-center justify-center transform -translate-y-1/2">
+            <p class="text-5xl font-extrabold ">Achievement</p>
+        </div>
+    </section>    
+</body>
+</html>
