@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../src/output.css" rel="stylesheet">
-    <link rel="icon" href="../assets/head-logo.webp" type="image/x-icon"> 
+    <link rel="icon" href="../assets/head-logo.webp" type="image/x-icon">  
 </head>
-<body>
+<body class="bg-gray-100 p-8>
     <nav class="bg-white border-gray-200">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -77,9 +77,266 @@
         <div id="custom-controls-gallery" class="relative w-full" data-carousel="slide">
             <img src="../assets/achievement-1.jpg" alt="hogwarts">
         </div>
-        <div class="bg-white w-[500px] h-[200px] flex items-center justify-center transform -translate-y-1/2">
-            <p class="text-5xl font-extrabold ">Achievement</p>
+        <div class="bg-white w-[1000px] h-[200px] flex flex-col items-center justify-center space-y-2 transform -translate-y-1/2">
+            <h3 class="text-2xl font-semibold text-customRed">Achivement</h3>
+            <p class="text-7xl font-extrabold py-1">Academic</p>
+            <div class="w-20 h-1 bg-customRed"></div>
         </div>
-    </section>    
+    </section>
+        <!-- Grid container -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 max-w-full mx-4 lg:mx-10">
+
+        <!-- Card 1 -->
+        <div class="card bg-white p-4 rounded-lg shadow-lg overflow-hidden group transition duration-300 group hover:bg-gray-100 hover:shadow-xl">
+            <div class="relative overflow-hidden rounded-lg">
+            <img src="../assets/GhinnyLeader.webp" alt="Harry Potter" class="w-full h- object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-95 group-hover:rotate-3">
+            </div>
+            <div class="p-4">
+                <h3 class="text-2xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customRed">The Captain of Gryffindor Quidditch team</h3>
+                <p class="text-gray-600 text-justify">Ginny Weasley is a renowned character in the Harry Potter series, known for her exceptional magic skills and leadership in the Quidditch field. Her strong will and determination.</p>
+                <div class="h-1 bg-gray-300 transition duration-300 group-hover:bg-customRed"></div>
+            </div>
+        </div>
+        
+
+        <!-- Card 2 -->
+        <div class="card bg-white p-4 rounded-lg shadow-lg overflow-hidden group transition duration-300 group hover:bg-gray-100 hover:shadow-xl">
+            <div class="relative overflow-hidden rounded-lg">
+            <img src="../assets/Ernie.webp" alt="Harry Potter" class="w-full h- object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-95 group-hover:rotate-3">
+            </div>
+            <div class="p-4">
+                <h3 class="text-2xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customYellow">The Prefect of Hufflepuff</h3>
+                <p class="text-gray-600 text-justify">Ernie Macmillan is known for his academic prowess and leadership qualities. As a prefect of Hufflepuff, he upholds the house's values of hard work and loyalty.  Ernie also joins Dumbledore's Army.</p>
+                <div class="h-1 bg-gray-300 transition duration-300 group-hover:bg-customYellow"></div>
+            </div>
+        </div>
+        
+
+        <!-- Card 3 -->
+        <div class="card bg-white p-4 rounded-lg shadow-lg overflow-hidden group transition duration-300 group hover:bg-gray-100 hover:shadow-xl">
+            <div class="relative overflow-hidden rounded-lg">
+            <img src="../assets/DracoMalfoy.webp" alt="Harry Potter" class="w-full h- object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-95 group-hover:rotate-3">
+            </div>
+            <div class="p-4">
+                <h3 class="text-2xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customGreen">The Intelligent and Ambitious Student</h3>
+                <p class="text-gray-600 text-justify">Draco Malfoy, an intelligent and ambitious student. His ambition often fuels his complex. Draco's intelligence and ambition are undeniable, making him a multifaceted character in the Harry Potter series.</p>
+                <div class="h-1 bg-gray-300 transition duration-300 group-hover:bg-customGreen"></div>
+            </div>
+        </div>
+        
+
+        <!-- Card 4 -->
+        <div class="card bg-white p-4 rounded-lg shadow-lg overflow-hidden group transition duration-300 group hover:bg-gray-100 hover:shadow-xl">
+            <img src="../assets/LunaGenius.webp" alt="Card Image" class="w-full h-90 object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-95 group-hover:rotate-3">
+            <div class="p-4">
+                <h3 class="text-2xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customBlue">The Eccentric Genius of Ravenclaw</h3>
+                <p class="text-gray-600 text-justify">Luna Lovegood, a Ravenclaw student, was known for her creativity, analytical thinking, and deep understanding of magical creatures. She also displayed exceptional practical wisdom. </p>
+                <div class="h-1 bg-gray-300 transition duration-300 group-hover:bg-customBlue"></div>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card bg-white p-4 rounded-lg shadow-lg overflow-hidden group transition duration-300 group hover:bg-gray-100 hover:shadow-xl">
+            <img src="../assets/NevilleHerbo.webp" alt="Card Image" class="w-full h-90 object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-95 group-hover:rotate-3">
+            <div class="p-4">
+                <h3 class="text-2xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customRed">Master of Herbology and a Hero of the Battle of Hogwarts</h3>
+                <p class="text-gray-600 text-justify">Neville Longbottom, a renowned Herbology student at Hogwarts, excelled in the Battle of Hogwarts, leading a courageous battle against Voldemort. He became a Herbology professor.</p>
+                <div class="h-1 bg-gray-300 transition duration-300 group-hover:bg-customRed"></div>
+            </div>
+        </div>
+        
+        
+
+        <!-- Card 6 -->
+        <div class="card bg-white p-4 rounded-lg shadow-lg overflow-hidden group transition duration-300 group hover:bg-gray-100 hover:shadow-xl">
+            <img src="../assets/HermioneSmart.webp" alt="Hermione Granger" class="w-full h-90 object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-95 group-hover:rotate-3">
+            <div class="p-4">
+                <h3 class="text-2xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customRed">The Brightest Witch of Her Age and a Master of Time</h3>
+                <p class="text-gray-600 text-justify">Hermione Granger, a brilliant student at Hogwarts, used the Time-Turner to attend multiple classes simultaneously, demonstrating her academic prowess and strategic thinking.</p>
+                <div class="h-1 bg-gray-300 transition duration-300 group-hover:bg-customRed"></div>
+            </div>
+        </div>
+        
+        <!-- Card 7 -->
+        <div class="card bg-white p-4 rounded-lg shadow-lg overflow-hidden group transition duration-300 group hover:bg-gray-100 hover:shadow-xl">
+            <div class="relative overflow-hidden rounded-lg">
+            <img src="../assets/Cedric.webp" alt="Harry Potter" class="w-full h- object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-95 group-hover:rotate-3">
+            </div>
+            <div class="p-4">
+                <h3 class="text-2xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customYellow">The Celebrated of Hufflepuff</h3>
+                <p class="text-gray-600 text-justify">Cedric Diggory, a celebrated Hufflepuff in the Harry Potter series, is known for his academic and athletic talents, as well as his hard work and loyalty. He excelled in the Triwizard Tournament, showcasing intelligence and bravery.</p>
+                <div class="h-1 bg-gray-300 transition duration-300 group-hover:bg-customYellow"></div>
+            </div>
+        </div>
+        
+        
+        <!-- Card 8 -->
+        <div class="card bg-white p-4 rounded-lg shadow-lg overflow-hidden group transition duration-300 group hover:bg-gray-100 hover:shadow-xl">
+            <div class="relative overflow-hidden rounded-lg">
+            <img src="../assets/Regulus.webp" alt="Harry Potter" class="w-full h- object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-95 group-hover:rotate-3">
+            </div>
+            <div class="p-4">
+                <h3 class="text-2xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customGreen">The Member of Black Family</h3>
+                <p class="text-gray-600 text-justify">Regulus Black, a Death Eater from the Black family, initially aligned with Voldemort. However, he discovered the secret of Voldemort's Horcruxes and decided to turn against him. He created a fake locket and Kreacher to retrieve the Horcrux.</p>
+                <div class="h-1 bg-gray-300 transition duration-300 group-hover:bg-customGreen"></div>
+            </div>
+        </div>
+        
+        <!-- Card 9 -->
+        <div class="card bg-white p-4 rounded-lg shadow-lg overflow-hidden group transition duration-300 group hover:bg-gray-100 hover:shadow-xl">
+            <img src="../assets/ChoTalent.webp" alt="Card Image" class="w-full h-90 object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-95 group-hover:rotate-3">
+            <div class="p-4">
+                <h3 class="text-2xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customBlue"> The Talented Ravenclaw Student</h3>
+                <p class="text-gray-600 text-justify">Cho Chang, a Quidditch Seeker from Ravenclaw House, excelled academically and athletically. Her involvement in the Triwizard Tournament and relationships with Cedric Diggory and Harry Potter showcased her intelligence and courage.</p>
+                <div class="h-1 bg-gray-300 transition duration-300 group-hover:bg-customBlue"></div>
+            </div>
+        </div>
+        
+        <!-- Card 10 -->
+        <div class="card bg-white p-4 rounded-lg shadow-lg overflow-hidden group transition duration-300 group hover:bg-gray-100 hover:shadow-xl">
+            <div class="relative overflow-hidden rounded-lg">
+            <img src="../assets/HarryPotterSeeker.webp" alt="Harry Potter" class="w-full h- object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-95 group-hover:rotate-3">
+            </div>
+            <div class="p-4">
+                <h3 class="text-2xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customRed">The Youngest Seeker and a Hero of the Chamber of Secrets</h3>
+                <p class="text-gray-600 text-justify">Harry Potter, the youngest Seeker in Gryffindor Quidditch team history. He also demonstrated courage in the defeating the Basilisk in Chamber of Secrets.</p>
+                <div class="h-1 bg-gray-300 transition duration-300 group-hover:bg-customRed"></div>
+            </div>
+        </div>
+    </div>
+
+    <section class="relative flex flex-col items-center justify-center">
+        <div id="custom-controls-gallery" class="relative w-full" data-carousel="slide">
+            <img src="../assets/achievement-1.jpg" alt="hogwarts">
+        </div>
+        <div class="bg-white w-[1000px] h-[200px] flex flex-col items-center justify-center space-y-2 transform -translate-y-1/2">
+            <h3 class="text-2xl font-semibold text-customRed">Achivement</h3>
+            <p class="text-7xl font-extrabold py-1">Non Academic</p>
+            <div class="w-20 h-1 bg-customRed"></div>
+        </div>
+    </section>
+        <!-- Grid container -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 max-w-full mx-4 lg:mx-10">
+
+        <!-- Card 1 -->
+        <div class="card bg-white p-4 rounded-lg shadow-lg overflow-hidden group transition duration-300 group hover:bg-gray-100 hover:shadow-xl">
+            <div class="relative overflow-hidden rounded-lg">
+            <img src="../assets/GhinnyNA.webp" alt="Harry Potter" class="w-full h- object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-95 group-hover:rotate-3">
+            </div>
+            <div class="p-4">
+                <h3 class="text-2xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customRed">The Captain of Gryffindor Quidditch Team</h3>
+                <p class="text-gray-600 text-justify">Ginny Weasley is a renowned character in the Harry Potter series, known for her exceptional magic skills and leadership in the Quidditch field. Her strong will and determination.</p>
+                <div class="h-1 bg-gray-300 transition duration-300 group-hover:bg-customRed"></div>
+            </div>
+        </div>
+        
+
+        <!-- Card 2 -->
+        <div class="card bg-white p-4 rounded-lg shadow-lg overflow-hidden group transition duration-300 group hover:bg-gray-100 hover:shadow-xl">
+            <div class="relative overflow-hidden rounded-lg">
+            <img src="../assets/ErnieNA.webp" alt="Harry Potter" class="w-full h- object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-95 group-hover:rotate-3">
+            </div>
+            <div class="p-4">
+                <h3 class="text-2xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customYellow">The Prefect of Hufflepuff</h3>
+                <p class="text-gray-600 text-justify">Ernie Macmillan is known for his academic prowess and leadership qualities. As a prefect of Hufflepuff, he upholds the house's values of hard work and loyalty.  Ernie also joins Dumbledore's Army.</p>
+                <div class="h-1 bg-gray-300 transition duration-300 group-hover:bg-customYellow"></div>
+            </div>
+        </div>
+        
+
+        <!-- Card 3 -->
+        <div class="card bg-white p-4 rounded-lg shadow-lg overflow-hidden group transition duration-300 group hover:bg-gray-100 hover:shadow-xl">
+            <div class="relative overflow-hidden rounded-lg">
+            <img src="../assets/DracoNA.webp" alt="Harry Potter" class="w-full h- object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-95 group-hover:rotate-3">
+            </div>
+            <div class="p-4">
+                <h3 class="text-2xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customGreen">The Member of Slytherin Quidditch Team</h3>
+                <p class="text-gray-600 text-justify">Draco Malfoy, an intelligent and ambitious student. His ambition often fuels his complex. Draco's intelligence and ambition are undeniable, making him a multifaceted character in the Harry Potter series.</p>
+                <div class="h-1 bg-gray-300 transition duration-300 group-hover:bg-customGreen"></div>
+            </div>
+        </div>
+        
+
+        <!-- Card 4 -->
+        <div class="card bg-white p-4 rounded-lg shadow-lg overflow-hidden group transition duration-300 group hover:bg-gray-100 hover:shadow-xl">
+            <img src="../assets/LunaNA.webp" alt="Card Image" class="w-full h-90 object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-95 group-hover:rotate-3">
+            <div class="p-4">
+                <h3 class="text-2xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customBlue">The Member of Dumbledore's Army</h3>
+                <p class="text-gray-600 text-justify">Luna Lovegood, a Ravenclaw student, was known for her creativity, analytical thinking, and deep understanding of magical creatures. She also displayed exceptional practical wisdom. </p>
+                <div class="h-1 bg-gray-300 transition duration-300 group-hover:bg-customBlue"></div>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card bg-white p-4 rounded-lg shadow-lg overflow-hidden group transition duration-300 group hover:bg-gray-100 hover:shadow-xl">
+            <img src="../assets/RonNA.webp" alt="Card Image" class="w-full h-90 object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-95 group-hover:rotate-3">
+            <div class="p-4">
+                <h3 class="text-2xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customRed">The Keeper of Gryffindor Quidditch team</h3>
+                <p class="text-gray-600 text-justify">Neville Longbottom, a renowned Herbology student at Hogwarts, excelled in the Battle of Hogwarts, leading a courageous battle against Voldemort. He became a Herbology professor.</p>
+                <div class="h-1 bg-gray-300 transition duration-300 group-hover:bg-customRed"></div>
+            </div>
+        </div>
+        
+        
+
+        <!-- Card 6 -->
+        <div class="card bg-white p-4 rounded-lg shadow-lg overflow-hidden group transition duration-300 group hover:bg-gray-100 hover:shadow-xl">
+            <img src="../assets/HermioneNA.webp" alt="Hermione Granger" class="w-full h-90 object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-95 group-hover:rotate-3">
+            <div class="p-4">
+                <h3 class="text-2xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customRed">The Brightest Witch of Her Age and a Master of Time</h3>
+                <p class="text-gray-600 text-justify">Hermione Granger, a brilliant student at Hogwarts, used the Time-Turner to attend multiple classes simultaneously, demonstrating her academic prowess and strategic thinking.</p>
+                <div class="h-1 bg-gray-300 transition duration-300 group-hover:bg-customRed"></div>
+            </div>
+        </div>
+        
+        <!-- Card 7 -->
+        <div class="card bg-white p-4 rounded-lg shadow-lg overflow-hidden group transition duration-300 group hover:bg-gray-100 hover:shadow-xl">
+            <div class="relative overflow-hidden rounded-lg">
+            <img src="../assets/CedricNA.webp" alt="Harry Potter" class="w-full h- object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-95 group-hover:rotate-3">
+            </div>
+            <div class="p-4">
+                <h3 class="text-2xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customYellow">The Celebrated of Hufflepuff</h3>
+                <p class="text-gray-600 text-justify">Cedric Diggory, a celebrated Hufflepuff in the Harry Potter series, is known for his academic and athletic talents, as well as his hard work and loyalty. He excelled in the Triwizard Tournament, showcasing intelligence and bravery.</p>
+                <div class="h-1 bg-gray-300 transition duration-300 group-hover:bg-customYellow"></div>
+            </div>
+        </div>
+        
+        
+        <!-- Card 8 -->
+        <div class="card bg-white p-4 rounded-lg shadow-lg overflow-hidden group transition duration-300 group hover:bg-gray-100 hover:shadow-xl">
+            <div class="relative overflow-hidden rounded-lg">
+            <img src="../assets/RegulusNA.webp" alt="Harry Potter" class="w-full h- object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-95 group-hover:rotate-3">
+            </div>
+            <div class="p-4">
+                <h3 class="text-2xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customGreen">The Member of Black Family</h3>
+                <p class="text-gray-600 text-justify">Regulus Black, a Death Eater from the Black family, initially aligned with Voldemort. However, he discovered the secret of Voldemort's Horcruxes and decided to turn against him. He created a fake locket and Kreacher to retrieve the Horcrux.</p>
+                <div class="h-1 bg-gray-300 transition duration-300 group-hover:bg-customGreen"></div>
+            </div>
+        </div>
+        
+        <!-- Card 9 -->
+        <div class="card bg-white p-4 rounded-lg shadow-lg overflow-hidden group transition duration-300 group hover:bg-gray-100 hover:shadow-xl">
+            <img src="../assets/ChoChangNA.webp" alt="Card Image" class="w-full h-90 object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-95 group-hover:rotate-3">
+            <div class="p-4">
+                <h3 class="text-2xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customBlue"> The Talented Ravenclaw Student</h3>
+                <p class="text-gray-600 text-justify">Cho Chang, a Quidditch Seeker from Ravenclaw House, excelled academically and athletically. Her involvement in the Triwizard Tournament and relationships with Cedric Diggory and Harry Potter showcased her intelligence and courage.</p>
+                <div class="h-1 bg-gray-300 transition duration-300 group-hover:bg-customBlue"></div>
+            </div>
+        </div>
+        
+        <!-- Card 10 -->
+        <div class="card bg-white p-4 rounded-lg shadow-lg overflow-hidden group transition duration-300 group hover:bg-gray-100 hover:shadow-xl">
+            <div class="relative overflow-hidden rounded-lg">
+            <img src="../assets/HarryNA.webp" alt="Harry Potter" class="w-full h- object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-95 group-hover:rotate-3">
+            </div>
+            <div class="p-4">
+                <h3 class="text-2xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customRed">The Winner of Triwizard Tournament</h3>
+                <p class="text-gray-600 text-justify">Harry Potter, the youngest Seeker in Gryffindor Quidditch team history. He also demonstrated courage in the defeating the Basilisk in Chamber of Secrets.</p>
+                <div class="h-1 bg-gray-300 transition duration-300 group-hover:bg-customRed"></div>
+            </div>
+        </div>
+
+        
+    </div>
 </body>
 </html>
