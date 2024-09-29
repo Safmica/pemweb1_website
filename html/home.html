@@ -6,96 +6,145 @@
     <link href="../src/output.css" rel="stylesheet">
     <link rel="icon" href="../assets/head-logo.webp" type="image/x-icon"> 
     <style>
-        #content {
-            opacity: 0;
-            animation: fadeIn 4s forwards 10s;
+        .fade-in {
+    opacity: 0;
+    transform: translateY(20px); 
+    transition: opacity 10s ease-out, transform 10s ease-out; 
         }
+.fade-in.show {
+    opacity: 1; 
+    transform: translateY(0);
+}
+
 
         @keyframes fadeIn {
-            to {
-                opacity: 1;
-            }
-        }
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
-        #splash {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
+.fade-in {
+    animation: fadeIn 7s ease-out forwards;
+}
+#menu-toggle:checked ~ #menu-content {
+    display: flex;
+}
 
-        nav {
-            position: relative; 
-            z-index: 10;
-        }
+#menu-toggle {
+    display: none;
+}
 
-        .hover-customRed:hover {
-            color: #ff0000 !important;
-        }
-        .hover-customYellow:hover {
-            color: #ffff00 !important;
-        }
-        .hover-customGreen:hover {
-            color: #00ff00 !important;
-        }
-        .hover-customBlue:hover {
-            color: #0000ff !important;
-        }
-        
-        .menu-item:hover {
-            color: #ff0000;
-        }
-        .dropdown-item:hover {
-            color: #00ff00;
-        }
+@media (max-width: 1024px) {
+    .nav-links {
+        display: none;
+    }
+    #menu-toggle:checked ~ .nav-links {
+        display: flex; 
+    }
+}
     </style>
 </head>
 <body>
-    <nav class="bg-white border-gray-200">
-        <div class="flex flex-wrap items-center justify-between mx-auto p-2">
+    <nav class="bg-white border-gray-200 fixed w-full z-10">
+        <div class="flex flex-row flex-wrap items-center justify-between mx-auto p-2">
             <a class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="../assets/small-hogwarts.webp" class="h-12" alt="Hogwarts Logo" />
                 <span class="self-center text-4xl font-semibold whitespace-nowrap flex font-harryPotter">
                     <p>HOGWARTS</p>
                 </span>
             </a>
-            <div class="hidden sm:ml-6 sm:block">
-                <div class="flex space-x-4">
-                    <a href="#" class="flex rounded-md bg-gray-900 pl-3 px-3 py-2 text-sm font-medium text-white" aria-current="page">
+    
+            <div class="hidden md:flex md:ml-6">
+                <div class="flex space-x-4 nav-links">
+                    <a href="home.html" class="flex rounded-md bg-gray-900 pl-3 px-3 py-2 text-sm font-medium text-white" aria-current="page">
                         <img src="../assets/small-hogwarts.webp" alt="gambar" class="w-6 h-6 mr-2">
-                        <span>Profile</span>
+                        <span>Home</span>
                     </a>
-                    <a href="#" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent hover:bg-customRed hover:text-white transition-colors duration-300">
+                    <a href="Profile.html" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent hover:bg-customRed hover:text-white transition-colors duration-300">
                         <img src="../assets/Gryffindor.png" alt="gambar" class="w-6 h-6 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <span class="group-hover:text-white">Profile</span>
-                    </a>                                                                               
-                    <a href="#" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent hover:bg-customGreen hover:text-white transition-colors duration-300">
+                    </a>
+                    <a href="houses.html" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent hover:bg-customGreen hover:text-white transition-colors duration-300">
                         <img src="../assets/Slytherin.png" alt="gambar" class="w-6 h-6 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <span class="group-hover:text-white">Houses</span>
-                    </a>                                                                               
-                    <a href="#" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent hover:bg-customYellow hover:text-white transition-colors duration-300">
+                    </a>
+                    <a href="achievement.html" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent hover:bg-customYellow hover:text-white transition-colors duration-300">
                         <img src="../assets/Hufflepuff.png" alt="gambar" class="w-6 h-6 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <span class="group-hover:text-white">Achievement</span>
-                    </a>                                                                               
-                    <a href="#" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent hover:bg-customBlue hover:text-white transition-colors duration-300">
+                    </a>
+                    <a href="activity.html" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent hover:bg-customBlue hover:text-white transition-colors duration-300">
                         <img src="../assets/Ravenclaw.png" alt="gambar" class="w-6 h-6 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <span class="group-hover:text-white">Activity</span>
-                    </a>                                                                               
+                    </a>
                 </div>
-            </div>      
-        </div>      
-    </nav>  
-    <div id="splash" class="w-full h-screen flex items-center justify-center bg-transparent">
-        <video autoplay muted loop class="w-full h-full object-cover">
-            <source src="../assets/videoo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-    <div id="content" class="text-center p-8 relative z-0">
-        <h1 class="font-harryPotter text-4xl text-white font-bold mb-4">Welcome to Our Website</h1>
-        <button class="bg-blue-500 text-white px-6 py-3 rounded-lg">Explore</button>
-    </div>  
+            </div>
+    
+            <div class="lg:hidden flex items-center lg-auto">
+                <input type="checkbox" id="menu-toggle" class="hidden">
+                <label for="menu-toggle" class="flex justify-center items-center p-2 cursor-pointer">
+                    <span class="text-gray-500">☰</span>
+                </label>
+    
+                <div class="hidden flex-col space-y-2 p-4 bg-white border border-gray-200 absolute right-0 top-full nav-links" id="menu-content">
+                    <a href="home.html" class="flex rounded-md bg-gray-900 pl-3 px-3 py-2 text-sm font-medium text-white">
+                        <img src="../assets/small-hogwarts.webp" alt="gambar" class="w-6 h-6 mr-2">
+                        <span>Home</span>
+                    </a>
+                    <a href="Profile.html" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent hover:bg-customRed hover:text-white transition-colors duration-300">
+                        <img src="../assets/Gryffindor.png" alt="gambar" class="w-6 h-6 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span class="group-hover:text-white">Profile</span>
+                    </a>
+                    <a href="houses.html" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent hover:bg-customGreen hover:text-white transition-colors duration-300">
+                        <img src="../assets/Slytherin.png" alt="gambar" class="w-6 h-6 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span class="group-hover:text-white">Houses</span>
+                    </a>
+                    <a href="achievement.html" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent hover:bg-customYellow hover:text-white transition-colors duration-300">
+                        <img src="../assets/Hufflepuff.png" alt="gambar" class="w-6 h-6 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span class="group-hover:text-white">Achievement</span>
+                    </a>
+                    <a href="activity.html" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent hover:bg-customBlue hover:text-white transition-colors duration-300">
+                        <img src="../assets/Ravenclaw.png" alt="gambar" class="w-6 h-6 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span class="group-hover:text-white">Activity</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>           
+    <section class="relative">
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="w-full h-full flex items-center justify-center bg-transparent">
+                <video autoplay muted loop class="absolute inset-0 object-cover w-full h-full">
+                    <source src="../assets/video.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <div class="relative px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56 fade-in">
+            <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">We invest in the world’s potential</h1>
+            <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+            <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+                <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                    Get started
+                    <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                </a>
+                <a href="#" class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
+                    Learn more
+                </a>  
+            </div>
+        </div>        
+    </section>
+    <div class="bg-white w-3/4 h-auto flex flex-col items-center justify-center space-y-2 transform -translate-y-1/2 px-">
+        <h3 class="text-2xl font-semibold text-customRed">Achievement</h3>
+        <p class="text-7xl font-extrabold py-1 font-harryPotter">Non Academic</p>
+        <div class="w-20 h-1 bg-customRed"></div>
+    </div>    
     <footer class="w-full bg-gray-950">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3 gap-y-8 md:gap-8 py-8 max-w-sm mx-auto sm:max-w-3xl lg:max-w-full">
