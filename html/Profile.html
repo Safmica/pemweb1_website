@@ -22,9 +22,19 @@
           display: flex;
         }
       }
+
+      
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none; 
+}
+
+.scrollbar-hidden {
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+}
     </style>
   </head>
-  <body>
+  <body class="bg-black">
     <nav class="bg-white border-gray-200 fixed w-full z-10">
       <div
         class="flex flex-row flex-wrap items-center justify-between mx-auto p-2"
@@ -177,9 +187,9 @@
     </nav>
 
     <!-- PROFILE SECTION -->
-    <section>
-      <div class="w-full bg-black py-16">
-        <div class="container mx-auto">
+    <section class="">
+      <div class="w-full py-16">
+        <div class="container mx-auto mt-8">
           <div class="w-[90%] flex">
             <!-- LEFT SIDE -->
             <div class="w-1/2">
@@ -383,11 +393,28 @@
       </div>
     </section>
 
+    <div>
+      <br />
+      <br />
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </div>
+
     <div class="bg-black p-6">
       <!-- Title Section -->
       <div class="text-center mb-8">
         <h1 class="text-4xl text-slate-600 font-bold">
-          Hogwarts School of Witchcraft and Wizardry
+          Hogwarts School of Witchcraft and Wizardry House Accreditation
         </h1>
         <hr class="w-24 border-t-2 border-gray-500 mx-auto my-4" />
         <h2 class="text-2xl text-white font-medium mt-4">House Points</h2>
@@ -442,7 +469,170 @@
         >
       </div>
     </div>
+    <!-- PROFILE SECTION END-->
+    <div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </div>
 
+    <!-- HISTORY SECTION -->
+
+    <!-- Card Container -->
+    <div class="text-center mb-8">
+      <h1 class="font-harryPotter text-6xl text-white uppercase">HISTORY OF Hogwarts School of Witchcraft and Wizardry </h1>
+    </div>
+    <hr class="max-w-xs border-t-2 border-white mx-auto my-4" />
+
+    <section class="bg-gradient-to-b from-black to-white bg-white flex items-center justify-center min-h-screen mt-24 relative shadow-xl">
+      <div class="max-w-screen-md shadow-lg rounded-lg overflow-hidden mt-10 bg-">
+        <!-- Image Section -->
+        <div class="relative flex justify-center items-center">
+          <img
+            src="../assets/historybg.jpg"
+            alt="History Image"
+            class="h-auto gradient-to-b from-black to-white"
+          />
+          <!-- Text over the Image -->
+          <div
+            class="absolute bottom-0 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-50 text-white text-center px-3 py-1 rounded-t-md"
+          >
+            <h3 class="text-lg font-semibold">HISTORY</h3>
+          </div>
+        </div>
+
+        <div class="absolute left-2 w-36 h-auto rounded-xl overflow-hidden transform -translate-x-8 -translate-y-8 mx-9">
+          <img src="../assets/angel-1298818_19202.png" alt="" class="w-full h-auto">
+        </div>
+        <div class="absolute right-2 w-36 h-auto rounded-xl overflow-hidden transform -translate-x-8 -translate-y-8">
+          <img src="../assets/angel-1298818_1920.png" alt="" class="w-full h-auto">
+        </div>
+        <!-- Content Section -->
+        <div class="p-4 text-justify">
+          <p class="text-gray-700 mb-4">
+            Hogwarts School of Witchcraft and Wizardry was founded over a thousand years ago by four of the most powerful witches and wizards of their time: Godric Gryffindor, Salazar Slytherin, Rowena Ravenclaw, and Helga Hufflepuff. These founders had a shared vision of creating a magical school where young witches and wizards could be educated in the art of magic. Each founder had different ideals regarding the type of students who should be admitted, which later shaped the four houses of Hogwarts. Godric Gryffindor, known for his bravery and valor, believed in accepting all students who showed courage and a willingness to learn. Salazar Slytherin, however, had a more selective view, believing that only pure-blood witches and wizards were worthy of magical education. Rowena Ravenclaw, known for her wisdom, valued intelligence and creativity, while Helga Hufflepuff believed in fairness and hard work, welcoming all students equally.
+            <br><br>
+            For many years, the four founders worked harmoniously, but tensions eventually arose, especially between Gryffindor and Slytherin, due to their differing views on who should be admitted to the school. Salazar Slytherin, adamant about only teaching pure-blood students, eventually left the school after a serious dispute with Gryffindor. Before leaving, Slytherin secretly constructed the Chamber of Secrets, hiding a dangerous creature within it that, according to legend, would be unleashed to rid the school of those he deemed unworthy.
+            <br><br>
+            Despite Slytherins departure, Hogwarts continued to thrive under the leadership of the remaining founders and their successors. Over the centuries, the school grew in prominence, becoming one of the most prestigious magical institutions in the world. The four houses Gryffindor, Slytherin, Ravenclaw, and Hufflepuff remain central to the schools identity, with each student being sorted into a house that best matches their traits and values.
+          </p>
+    
+          <!-- Scrollable Images Section -->
+          
+            <div class="overflow-x-auto flex items-start justify-start space-x-4 pb-4 max-w-full max-h-max snap-x snap-mandatory scrollbar-hidden">
+              <div class="w-48 snap-center flex-shrink-0">
+                <img
+                  src="../assets/castlenight.jpg"
+                  alt="Gallery Image 1"
+                  class="w-48 h-48 rounded-lg shadow-md"
+                />
+                <p>DHJSHJJ</p>
+              </div>
+              <div class="w-48 snap-center flex-shrink-0">
+                <img
+                  src="../assets/magicbottle.jpg"
+                  alt="Gallery Image 2"
+                  class="w-48 h-48 rounded-lg shadow-md"
+                />
+                <p>DHJSHJJ</p>
+              </div>
+              <div class="w-48 snap-center flex-shrink-0">
+                <img
+                  src="../assets/train.jpg"
+                  alt="Gallery Image 3"
+                  class="w-48 h-48 rounded-lg shadow-md "
+                />
+                <p>DHJSHJJ</p>
+              </div>
+              <div class="w-48 snap-center flex-shrink-0">
+                <img
+                  src="../assets/SeveruSnape.webp"
+                  alt="Gallery Image 4"
+                  class="w-48 h-48 rounded-lg shadow-md"
+                />
+                <p>DHJSHJJ</p>
+              </div>
+              <div class="w-48 snap-center flex-shrink-0">
+                <img
+                  src="../assets/castleroom.jpg"
+                  alt="Gallery Image 5"
+                  class="w-48 h-48 rounded-lg shadow-md"
+                />
+                <p>DHJSHJJ</p>
+              </div>
+              <div class="w-48 snap-center flex-shrink-0">
+                <img
+                  src="../assets/senior.jpg"
+                  alt="Gallery Image 6"
+                  class="w-48 h-48 rounded-lg shadow-md"
+                />
+                <p>DHJSHJJ</p>
+              </div>
+              <!-- Duplicating images -->
+              <div class="w-48 snap-center flex-shrink-0">
+                <img
+                  src="../assets/senior2.jpg"
+                  alt="Gallery Image 7"
+                  class="w-48 h-48 rounded-lg shadow-md"
+                />
+                <p>DHJSHJJ</p>
+              </div>
+              <div class="w-48 snap-center flex-shrink-0">
+                <img
+                  src="../assets/activity.jpg"
+                  alt="Gallery Image 8"
+                  class="w-48 h-48 rounded-lg shadow-md"
+                />
+                <p>DHJSHJJ</p>
+              </div>
+            </div>
+          
+          
+        </div>
+      </div>
+    
+      <!-- Moved and resized image -->
+    
+    </section>
+    
+    
+    </section>
+
+    <div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    </div>
+
+    </div>
     <footer class="w-full bg-gray-950">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div
