@@ -6,100 +6,93 @@
     <link href="../src/output.css" rel="stylesheet">
     <link rel="icon" href="../assets/head-logo.webp" type="image/x-icon"> 
     <style>
-        #content {
-            opacity: 0;
-            animation: fadeIn 4s forwards 10s;
+        #menu-toggle:checked ~ #menu-content {
+            display: flex;
         }
 
-        @keyframes fadeIn {
-            to {
-                opacity: 1;
+        #menu-toggle {
+            display: none;
+        }
+
+        @media (max-width: 1024px) {
+            .nav-links {
+                display: none;
             }
-        }
-
-        #splash {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        nav {
-            position: relative; 
-            z-index: 10;
-        }
-
-        .hover-customRed:hover {
-            color: #ff0000 !important;
-        }
-        .hover-customYellow:hover {
-            color: #ffff00 !important;
-        }
-        .hover-customGreen:hover {
-            color: #00ff00 !important;
-        }
-        .hover-customBlue:hover {
-            color: #0000ff !important;
-        }
-        
-        .menu-item:hover {
-            color: #ff0000;
-        }
-        .dropdown-item:hover {
-            color: #00ff00;
+            #menu-toggle:checked ~ .nav-links {
+                display: flex;
+            }
         }
     </style>
 </head>
 <body>
-    <nav class="bg-white border-gray-200">
-        <div class="flex flex-wrap items-center justify-between mx-auto p-2">
+    <nav class="bg-white border-gray-200 fixed w-full z-10">
+        <div class="flex flex-row flex-wrap items-center justify-between mx-auto p-2">
             <a class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="../assets/small-hogwarts.webp" class="h-12" alt="Hogwarts Logo" />
                 <span class="self-center text-4xl font-semibold whitespace-nowrap flex font-harryPotter">
                     <p>HOGWARTS</p>
                 </span>
             </a>
-            <div class="hidden sm:ml-6 sm:block">
-                <div class="flex space-x-4">
-                    <a href="#" class="flex rounded-md bg-gray-900 pl-3 px-3 py-2 text-sm font-medium text-white" aria-current="page">
-                        <img src="../assets/small-hogwarts.webp" alt="gambar" class="w-6 h-6 mr-2">
-                        <span>Profile</span>
+    
+            <div class="hidden md:flex md:ml-6">
+                <div class="flex space-x-4 nav-links">
+                    <a href="home.html" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent hover:bg-black hover:text-white transition-colors duration-300">
+                        <img src="../assets/small-hogwarts.webp" alt="gambar" class="w-6 h-6 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span>Home</span>
                     </a>
-                    <a href="#" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent hover:bg-customRed hover:text-white transition-colors duration-300">
-                        <img src="../assets/Gryffindor.png" alt="gambar" class="w-6 h-6 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <a href="Profile.html" class="flex rounded-md bg-customRed pl-3 px-3 py-2 text-sm font-medium text-white" aria-current="page">
+                        <img src="../assets/Gryffindor.png" alt="gambar" class="w-6 h-6 mr-2">
                         <span class="group-hover:text-white">Profile</span>
-                    </a>                                                                               
-                    <a href="#" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent hover:bg-customGreen hover:text-white transition-colors duration-300">
+                    </a>
+                    <a href="houses.html" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent hover:bg-customGreen hover:text-white transition-colors duration-300">
                         <img src="../assets/Slytherin.png" alt="gambar" class="w-6 h-6 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <span class="group-hover:text-white">Houses</span>
-                    </a>                                                                               
-                    <a href="#" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent hover:bg-customYellow hover:text-white transition-colors duration-300">
+                    </a>
+                    <a href="achievement.html" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent hover:bg-customYellow hover:text-white transition-colors duration-300">
                         <img src="../assets/Hufflepuff.png" alt="gambar" class="w-6 h-6 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <span class="group-hover:text-white">Achievement</span>
-                    </a>                                                                               
-                    <a href="#" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent hover:bg-customBlue hover:text-white transition-colors duration-300">
+                    </a>
+                    <a href="activity.html" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent hover:bg-customBlue hover:text-white transition-colors duration-300">
                         <img src="../assets/Ravenclaw.png" alt="gambar" class="w-6 h-6 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <span class="group-hover:text-white">Activity</span>
-                    </a>                                                                               
+                    </a>
                 </div>
-            </div>      
-        </div>      
-    </nav>  
-    <div id="splash" class="w-full h-screen flex items-center justify-center bg-transparent">
-        <video autoplay muted loop class="w-full h-full object-cover">
-            <source src="../assets/videoo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-    <div id="content" class="text-center p-8 relative z-0">
-        <h1 class="font-harryPotter text-4xl text-white font-bold mb-4">Welcome to Our Website</h1>
-        <button class="bg-blue-500 text-white px-6 py-3 rounded-lg">Explore</button>
-    </div>  
-        <section class="relative flex flex-col items-center justify-center">
-          <div class="relative w-full h-min" data-carousel="slide">
-              <img src="../assets/moon-2245743.jpg" alt="hogwarts">
-          </div>
+            </div>
+            <div class="lg:hidden flex items-center lg-auto">
+                <input type="checkbox" id="menu-toggle" class="hidden">
+                <label for="menu-toggle" class="flex justify-center items-center p-2 cursor-pointer">
+                    <span class="text-gray-500">☰</span>
+                </label>
+    
+                <div class="hidden flex-col space-y-2 p-4 bg-white border border-gray-200 absolute right-0 top-full nav-links" id="menu-content">
+                    <a href="home.html" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-black bg-transparent hover:bg-black hover:text-white transition-colors duration-300">
+                        <img src="../assets/small-hogwarts.webp" alt="gambar" class="w-6 h-6 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span>Home</span>
+                    </a>
+                    <a href="Profile.html" class="flex rounded-md bg-customRed pl-3 px-3 py-2 text-sm font-medium text-white" aria-current="page">
+                        <img src="../assets/Gryffindor.png" alt="gambar" class="w-6 h-6 mr-2">
+                        <span class="group-hover:text-white">Profile</span>
+                    </a>
+                    <a href="houses.html" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent hover:bg-customGreen hover:text-white transition-colors duration-300">
+                        <img src="../assets/Slytherin.png" alt="gambar" class="w-6 h-6 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span class="group-hover:text-white">Houses</span>
+                    </a>
+                    <a href="achievement.html" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent hover:bg-customYellow hover:text-white transition-colors duration-300">
+                        <img src="../assets/Hufflepuff.png" alt="gambar" class="w-6 h-6 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span class="group-hover:text-white">Achievement</span>
+                    </a>
+                    <a href="activity.html" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent hover:bg-customBlue hover:text-white transition-colors duration-300">
+                        <img src="../assets/Ravenclaw.png" alt="gambar" class="w-6 h-6 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span class="group-hover:text-white">Activity</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>   
+    <section class="relative flex flex-col items-center justify-center">
+        <div class="relative w-full h-min" data-carousel="slide">
+            <img src="../assets/moon-2245743.jpg" alt="hogwarts">
+        </div>
     
         <div class=" flex items-center justify-between mt-6">
           <div class="absolute left-0 w-24 ">
