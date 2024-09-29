@@ -22,6 +22,7 @@
                 display: flex;
             }
         }
+        
     </style>
 </head>
 <body>
@@ -90,24 +91,97 @@
             </div>
         </div>
     </nav>  
-    
 
     <section class="relative flex flex-col items-center justify-center">
         <div id="custom-controls-gallery" class="relative w-full" data-carousel="slide">
             <img src="../assets/hogwarts2.webp" alt="hogwarts">
         </div>
-        <div class="bg-gray-300 w-[1000px] h-[200px] rounded-xl flex flex-col items-center justify-center space-y-2 transform -translate-y-1/2">
-            <p class="text-7xl font-harryPotter py-1"> Houses of Hogwarts </p>
+        <div class="bg-gray-900 w-[1000px] h-[200px] rounded-xl flex flex-col items-center justify-center space-y-2 transform -translate-y-1/2">
+            <p class="text-7xl text-white py-1 font-harryPotter"> Houses of Hogwarts </p>
+        </div>
+        <div class="bg-gray-100 w-[1200px] h-[3000px] shadow-2xl rounded-xl flex flex-col items-center text-center space-y-5 transform">
+            <p class="text-black p-10 "> Hogwarts School of Witchcraft and Wizardry was founded by four of the most brilliant witches and wizards of their time.<br>
+                It was founded in the 10th century by Godric Gryffindor, Rowena Ravenclaw, Helga Hufflepuff and Salazar Slytherin.<br>
+                Each of them created a house in their names and thus established one of the best schools in the wizarding world.<br>
+                Many of the individuals in each house have similar traits or qualities as the original founders.<br>
+                Young witches and wizards receive their letters to Hogwarts at the mere age of 11 years old.<br>
+                Before beginning their schooling , each student must first be sorted into their correct houses by the magical Sorting Hat.</p>
+                <div class="w-20 h-1 bg-gray-900"></div>
+            <p class="text-black  text-5xl font-extrabold"> Get to Know Hogwarts Houses! </p>
+
+        <!-- Grid container -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-7xl mx-4 lg:mx-10 py-5 mb-16">
+
+        <!-- Card 1 -->
+        <div class="card bg-white p-3 rounded-3xl shadow-2xl transition duration-200 group hover:bg-customRed hover:shadow-2xl mb-20">
+            <div class="relative overflow-hidden rounded-3xl">
+            <img src="../assets/gryffindor.gif" alt="Harry Potter" class="w-full h-90 object-cover shadow-white rounded-t-lg transform duration-200">
+            </div>
+            <div class="p-4 py-5">
+                <p class="text-5xl font-harryPotter text-center mb-1 transition duration-200 group-hover:text-white py-4">Gryffindor</p>
+                <div class="h-1 bg-gray-300 transition mb-5 duration-400 rounded-3xl group-hover:bg-white"></div>
+                <p class=" group-hover:text-white text-justify"> Those in this house are well known for their bravery and courage. Gryffindors never back down from a fight or doing what they believe is right. Some of the most famous gryffindors include Harry Potter and Albus Dumbledore, the most recent headmaster of Hogwarts. </p>
+            </div>
+            <a
+              href="gryffindor.html"
+              class="text-xs py-2 px-5 h-8 block w-auto bg-gray-900 rounded-full text-white transition-transform duration-200 transform hover:scale-90 hover:bg-black mb-5 ">
+              Learn More
+            </a>
         </div>
 
-        <div class="bg-gray-200 w-[1200px] h-[96px] rounded-xl mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"
-        <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3 gap-y-8 md:gap-8 py-8 max-w-sm mx-auto sm:max-w-3xl lg:max-w-full">
-            <p class="text-black"> "The four Houses are called Gryffindor, Hufflepuff, Ravenclaw, and Slytherin. Each House has its own noble history and each has produced outstanding witches and wizards. While you are at Hogwarts, your triumphs will earn your House points, while any rule breaking will lose House points. At the end of the year, the House with the most points is awarded the House Cup, a great honour. I hope each of you will be a credit to whichever House becomes yours."
-                — Minerva McGonagall to first-year students on 1 September 1991, shortly before the Sorting Ceremony</p>
+         <!-- Card 2 -->
+         <div class="card bg-white p-3 rounded-3xl shadow-2xl transition duration-200 group hover:bg-customGreen hover:shadow-2xl mb-20">
+            <div class="relative overflow-hidden rounded-3xl">
+            <img src="../assets/slytherin.gif" alt="Harry Potter" class="w-full h-90 object-cover shadow-white rounded-t-lg transform duration-200">
+            </div>
+            <div class="p-4 py-5">
+                <p class="text-5xl font-harryPotter text-center mb-1 transition duration-200 group-hover:text-white py-4">Slytherin</p>
+                <div class="h-1 bg-gray-300 transition mb-5 duration-400 rounded-3xl group-hover:bg-white"></div>
+                <p class=" group-hover:text-white text-justify">Founded by Salazar Slytherin, Slytherins value cunningness and ambition. Many of the witches and wizards of this house became death eaters during the time of Voldemort’s (The Dark Lord) uprising. </p>
+            </div>
+            <a
+              href="gryffindor.html"
+              class="text-xs py-2 px-5 h-8 block w-auto bg-gray-900 rounded-full text-white transition-transform duration-200 transform hover:scale-90 hover:bg-black mb-5 ">
+              Learn More
+            </a>
+        </div>
 
+         <!-- Card 3 -->
+         <div class="card bg-white p-3 rounded-3xl shadow-2xl transition duration-200 group hover:bg-customYellow hover:shadow-2xl mb-20">
+            <div class="relative overflow-hidden rounded-3xl">
+            <img src="../assets/hufflepuff.gif" alt="Harry Potter" class="w-full h-90 object-cover shadow-white rounded-t-lg transform duration-200">
+            </div>
+            <div class="p-4 py-5">
+                <p class="text-5xl font-harryPotter text-center mb-1 transition duration-200 group-hover:text-white py-4">Hufflepuff</p>
+                <div class="h-1 bg-gray-300 transition mb-5 duration-400 rounded-3xl group-hover:bg-white"></div>
+                <p class=" group-hover:text-white text-justify"> Hufflepuffs value hardwork and dedication. They are also extremely loyal to their friends and loved ones. Their colors are yellow and black with their animal as a badger </p>
+            </div>
+            <a
+              href="gryffindor.html"
+              class="text-xs py-2 px-5 h-8 block w-auto bg-gray-900 rounded-full text-white transition-transform duration-200 transform hover:scale-90 hover:bg-black mb-5 ">
+              Learn More
+            </a>
+        </div>
+
+         <!-- Card 4 -->
+         <div class="card bg-white p-3 rounded-3xl shadow-2xl transition duration-200 group hover:bg-customBlue hover:shadow-2xl mb-20">
+            <div class="relative overflow-hidden rounded-3xl">
+            <img src="../assets/ravenclaw.gif" alt="Harry Potter" class="w-full h-90 object-cover shadow-white rounded-t-lg transform duration-200">
+            </div>
+            <div class="p-4 py-5">
+                <p class="text-5xl font-harryPotter text-center mb-1 transition duration-200 group-hover:text-white py-4">Ravenclaw</p>
+                <div class="h-1 bg-gray-300 transition mb-5 duration-400 rounded-3xl group-hover:bg-white"></div>
+                <p class=" group-hover:text-white text-justify"> Ravenclaws are extremely focused on intelligence, knowledge and wittiness. Their colors are blue and bronze with a eagle as their emblem. </p>
+            </div>
+            <a
+              href="gryffindor.html"
+              class="text-xs py-2 px-5 h-8 block w-auto bg-gray-900 rounded-full text-white transition-transform duration-200 transform hover:scale-90 hover:bg-black mb-5 ">
+              Learn More
+            </a>
         </div>
     </section>
 
+        
     <footer class="w-full bg-gray-900">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3 gap-y-8 md:gap-8 py-8 max-w-sm mx-auto sm:max-w-3xl lg:max-w-full">
