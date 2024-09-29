@@ -139,4 +139,17 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-style: normal;
+    cursor: url('../assets/cursor.png'), auto;
+}
+
+a, button, input, select {
+    cursor: url('../assets/cursor-hover.png'), auto;
+}
+
+a:hover, button:hover {
+    cursor: url('../assets/cursor-hover.png'), auto;
+}
+
+input[type="text"], textarea {
+    cursor: url('../assets/cursor-hover.png'), auto;
 }
