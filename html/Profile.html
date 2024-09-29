@@ -52,7 +52,7 @@
     </style>
   </head>
   <body>
-    <nav class="bg-bla border-gray-200">
+    <nav class="border-gray-200">
       <div class="flex flex-wrap items-center justify-between mx-auto p-2">
         <a class="flex items-center space-x-3 rtl:space-x-reverse">
           <img
@@ -146,30 +146,12 @@
       </button>
     </div>
 
-    <!-- PROFILE -->
-    <!-- <section class="relative flex flex-col items-center justify-center">
-          <div class="relative w-full h-min" data-carousel="slide ">
-              <img src="../assets/moon-2245743.jpg" alt="hogwarts">
-          </div>
-    
-        <div class=" flex items-center justify-between mt-6">
-          <div class="absolute left-0 w-24 ">
-            <img src="../assets/wand-151099_1920.png" alt="" class="w-full h-auto">
-          </div>
-          <div class="flex items-center justify-center mx-auto">
-          <p class="text-5xl font-extrabold ">About <span class="font-harryPotter">Hogwarts</p>
-          </div>
-          <div class="absolute right-0 w-24">
-            <img src="../assets/angel-1298818_1920.png" alt="" class="w-full h-auto">
-          </div>
-        <div>   
-    </section> -->
-
+    <!-- PROFILE SECTION -->
     <section>
       <div class="w-full bg-black py-16">
         <div class="container mx-auto">
           <div class="w-[90%] flex">
-            <!-- bagian kiri -->
+            <!-- LEFT SIDE -->
             <div class="w-1/2">
               <div class="mb-10 text-center">
                 <h1 class="font-extrabold text-6xl text-slate-800 uppercase">
@@ -253,8 +235,7 @@
                 </div>
               </div>
             </div>
-
-            <!-- bagian kanan -->
+            <!-- RIGHT SIDE -->
             <div class="w-1/2 relative">
               <div class="max-w-4xl flex justify-end">
                 <div class="w-72 h-[400px] rounded-xl overflow-hidden">
@@ -371,6 +352,66 @@
         </div>
       </div>
     </section>
+
+    <div class="bg-black p-6">
+      <!-- Title Section -->
+      <div class="text-center mb-8">
+        <h1 class="text-4xl text-slate-600 font-bold">
+          Hogwarts School of Witchcraft and Wizardry
+        </h1>
+        <hr class="w-24 border-t-2 border-gray-500 mx-auto my-4" />
+        <h2 class="text-2xl text-white font-medium mt-4">House Points</h2>
+        <p class="text-white mt-2">
+          Current rankings for Gryffindor, Slytherin, Ravenclaw, and Hufflepuff.
+        </p>
+      </div>
+
+      <!-- Stats Data (House Points) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <!-- Gryffindor -->
+        <div class="stat-item">
+          <h3 class="text-lg font-semibold text-customRed">Gryffindor</h3>
+          <div class="w-full bg-gray-600 rounded-full h-4 mb-2">
+            <div class="bg-blue-500 h-4 rounded-full" style="width: 90%"></div>
+          </div>
+          <p class="text-sm text-white">90 points</p>
+        </div>
+
+        <!-- Slytherin -->
+        <div class="stat-item">
+          <h3 class="text-lg font-semibold text-customGreen">Slytherin</h3>
+          <div class="w-full bg-gray-600 rounded-full h-4 mb-2">
+            <div class="bg-blue-500 h-4 rounded-full" style="width: 85%"></div>
+          </div>
+          <p class="text-sm text-white">85 points</p>
+        </div>
+
+        <!-- Ravenclaw -->
+        <div class="stat-item">
+          <h3 class="text-lg font-semibold text-customBlue">Ravenclaw</h3>
+          <div class="w-full bg-gray-600 rounded-full h-4 mb-2">
+            <div class="bg-blue-500 h-4 rounded-full" style="width: 88%"></div>
+          </div>
+          <p class="text-sm text-white">88 points</p>
+        </div>
+
+        <!-- Hufflepuff -->
+        <div class="stat-item">
+          <h3 class="text-lg font-semibold text-customYellow">Hufflepuff</h3>
+          <div class="w-full bg-gray-600 rounded-full h-4 mb-2">
+            <div class="bg-blue-500 h-4 rounded-full" style="width: 80%"></div>
+          </div>
+          <p class="text-sm text-white">80 points</p>
+        </div>
+      </div>
+
+      <!-- Button -->
+      <div class="text-center mt-8">
+        <a href="#" class="text-blue-300 font-semibold underline"
+          >View Full House Rankings</a
+        >
+      </div>
+    </div>
 
     <footer class="w-full bg-gray-950">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
