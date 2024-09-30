@@ -91,7 +91,7 @@
     </style>
 </head>
 <body>
-    <nav class="bg-white border-gray-200 fixed w-full z-10">
+    <nav class="bg-white border-gray-200 fixed w-full z-50">
         <div class="flex flex-row flex-wrap items-center justify-between mx-auto p-2">
             <a class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="../assets/small-hogwarts.webp" class="h-12" loading="lazy" alt="Hogwarts Logo" />
@@ -99,7 +99,6 @@
                     <p>HOGWARTS</p>
                 </span>
             </a>
-    
             <div class="hidden md:flex md:ml-6">
                 <div class="flex space-x-4 nav-links">
                     <a href="home.html" class="flex rounded-md bg-gray-900 pl-3 px-3 py-2 text-sm font-medium text-white" aria-current="page">
@@ -232,48 +231,140 @@
                 </p>
             </div>
         </div>                                      
-        <div class=" h-auto flex flex-col items-center justify-center space-y-2">
+        <div class=" h-auto flex flex-col items-center justify-around space-y-2 py-6 px-[5%]">
             <div class="items-center justify-center py-12">
-                <h2 class="text-3xl font-bold text-center text-blue-900 mb-10">Our Impact</h2>
+                <h2 class="text-4xl font-bold text-center text-blue-900 mb-10">Our Impact</h2>
                 <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <!-- First Card -->
-                    <div class="flex flex-col items-center text-center">
+                    <div class="flex flex-col items-center text-center transform transition-transform duration-300 hover:scale-110 hover:rotate-3">
                         <img src="../assets/icon-red.webp" alt="High School Graduation Rate" class="w-20 h-20 mb-4">
                         <h3 class="text-4xl font-bold text-blue-900">94%</h3>
                         <p class="text-gray-700 mt-2">Best Wizards Graduation Rate (2023)</p>
                     </div>
                     <!-- Second Card -->
-                    <div class="flex flex-col items-center text-center">
+                    <div class="flex flex-col items-center text-center transform transition-transform duration-300 hover:scale-110 hover:rotate-3">
                         <img src="../assets/icon-green.webp" alt="Cal State UC Admissions" class="w-20 h-20 mb-4">
                         <h3 class="text-4xl font-bold text-blue-900">37 Years</h3>
                         <p class="text-gray-700 mt-2">As The Best Wizards School in international scale</p>
                     </div>
                     <!-- Third Card -->
-                    <div class="flex flex-col items-center text-center">
+                    <div class="flex flex-col items-center text-center transform transition-transform duration-300 hover:scale-110 hover:rotate-3">
                         <img src="../assets/icon-blue.webp" alt="Colleges and Universities" class="w-20 h-20 mb-4">
                         <h3 class="text-4xl font-bold text-blue-900">2758</h3>
                         <p class="text-gray-700 mt-2">Magic spell has been created by Hogwarts Students (2023)</p>
                     </div>
                     <!-- Fourth Card -->
-                    <div class="flex flex-col items-center text-center">
+                    <div class="flex flex-col items-center text-center transform transition-transform duration-300 hover:scale-110 hover:rotate-3">
                         <img src="../assets/icon-yellow.webp" alt="Counseling Minutes" class="w-20 h-20 mb-4">
                         <h3 class="text-4xl font-bold text-blue-900">1.9 Million</h3>
                         <p class="text-gray-700 mt-2">Hogwarts new student registration (2023)</p>
                     </div>
                 </div>
             </div>        
+        </div>        
+    </article>  
+    <div>
+        <img src="../assets/castel.webp" class="w-full">
+    </div>
+    <div class="bg-black">
+        <h2 class="text-4xl font-bold text-center text-white mb-10">Work Program and Objectives</h2>
+        <div class="bg-black flex flex-wrap gap-6 w-auto m-auto py-6 px-[8%] justify-center align-middle">
+            <div>
+                <div class="card-container group relative w-[300px] h-[300px] rounded-lg shadow-lg overflow-hidden flex justify-center align-middle" style="background-image: url('../assets/list-1.webp');background-position: center;background-size: cover;">
+                    <div class="absolute inset-0 bg-black opacity-30 z-20"></div>
+                    <div class="absolute top-[50%] left-0 right-0 flex flex-col items-center justify-center z-30 transition-transform duration-300 group-hover:-translate-y-[100%]">
+                        <img src="../assets/Hogwarts.webp" alt="Icon" class="w-[100px] h-[100px]">
+                        <p class="font-poppins font-bold text-xl text-white">Powerfull Achievement</p>
+                    </div>
+                    <div class="description absolute inset-0 bg-customRed bg-opacity-50 p-4 text-white text-center transform translate-y-full transition-transform duration-300 group-hover:translate-y-0 flex items-center justify-center z-20">
+                    </div>
+                    <div class="text-white h-[150%] font-poppins flex flex-col justify-center align-middle text-center text-sm w-[90%] z-20 transform duration-200 opacity-0 group-hover:opacity-100">
+                        <p class="transform -translate-y-[80%]">n every student, With a focus on academic excellence</p>
+                        <br>
+                        <a class="font-bold absolute transform translate-x-[120%] translate-y-[240%]">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card-container group relative w-[300px] h-[300px] rounded-lg shadow-lg overflow-hidden flex justify-center align-middle" style="background-image: url('../assets/list-2.webp');background-position: center;background-size: cover;">
+                    <div class="absolute inset-0 bg-black opacity-50 z-20"></div>
+                    <div class="absolute top-[50%] left-0 right-0 flex flex-col items-center justify-center z-30 transition-transform duration-300 group-hover:-translate-y-[100%]">
+                        <img src="../assets/Hogwarts.webp" alt="Icon" class="w-[100px] h-[100px]">
+                        <p class="font-poppins font-bold text-xl text-white">Houses Synergize</p>
+                    </div>
+                    <div class="description absolute inset-0 bg-customYellow bg-opacity-50 p-4 text-white text-center transform translate-y-full transition-transform duration-300 group-hover:translate-y-0 flex items-center justify-center z-20">
+                    </div>
+                    <div class="text-white h-[150%] font-poppins flex flex-col justify-center align-middle text-center text-sm w-[90%] z-20 transform duration-200 opacity-0 group-hover:opacity-100">
+                        <p class="transform -translate-y-[80%]">n every student, With a focus on academic excellence</p>
+                        <br>
+                        <a class="font-bold absolute transform translate-x-[120%] translate-y-[240%]">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card-container group relative w-[300px] h-[300px] rounded-lg shadow-lg overflow-hidden flex justify-center align-middle" style="background-image: url('../assets/list-3.webp');background-position: center;background-size: cover;">
+                    <div class="absolute inset-0 bg-black opacity-30 z-20"></div>
+                    <div class="absolute top-[50%] left-0 right-0 flex flex-col items-center justify-center z-30 transition-transform duration-300 group-hover:-translate-y-[100%]">
+                        <img src="../assets/Hogwarts.webp" alt="Icon" class="w-[100px] h-[100px]">
+                        <p class="font-poppins font-bold text-xl text-white">Talent Facilities</p>
+                    </div>
+                    <div class="description absolute inset-0 bg-customGreen bg-opacity-50 p-4 text-white text-center transform translate-y-full transition-transform duration-300 group-hover:translate-y-0 flex items-center justify-center z-20">
+                    </div>
+                    <div class="text-white h-[150%] font-poppins flex flex-col justify-center align-middle text-center text-sm w-[90%] z-20 transform duration-200 opacity-0 group-hover:opacity-100">
+                        <p class="transform -translate-y-[80%]">n every student, With a focus on academic excellence</p>
+                        <br>
+                        <a class="font-bold absolute transform translate-x-[120%] translate-y-[240%]">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card-container group relative w-[300px] h-[300px] rounded-lg shadow-lg overflow-hidden flex justify-center align-middle" style="background-image: url('../assets/list-4.webp');background-position: center;background-size: cover;">
+                    <div class="absolute inset-0 bg-black opacity-40 z-20"></div>
+                    <div class="absolute top-[50%] left-0 right-0 flex flex-col items-center justify-center z-30 transition-transform duration-300 group-hover:-translate-y-[100%]">
+                        <img src="../assets/Hogwarts.webp" alt="Icon" class="w-[100px] h-[100px]">
+                        <p class="font-poppins font-bold text-xl text-white">Reliable Teacher</p>
+                    </div>
+                    <div class="description absolute inset-0 bg-customGreen bg-opacity-50 p-4 text-white text-center transform translate-y-full transition-transform duration-300 group-hover:translate-y-0 flex items-center justify-center z-20">
+                    </div>
+                    <div class="text-white h-[150%] font-poppins flex flex-col justify-center align-middle text-center text-sm w-[90%] z-20 transform duration-200 opacity-0 group-hover:opacity-100">
+                        <p class="transform -translate-y-[80%]">n every student, With a focus on academic excellence</p>
+                        <br>
+                        <a class="font-bold absolute transform translate-x-[120%] translate-y-[240%]">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card-container group relative w-[300px] h-[300px] rounded-lg shadow-lg overflow-hidden flex justify-center align-middle" style="background-image: url('../assets/bg-black.webp');">
+                    <div class="absolute top-[50%] left-0 right-0 flex flex-col items-center justify-center z-30 transition-transform duration-300 group-hover:-translate-y-[100%]">
+                        <img src="../assets/Hogwarts.webp" alt="Icon" class="w-[100px] h-[100px]">
+                        <p class="font-poppins font-bold text-xl text-white">Powerfull Achievement</p>
+                    </div>
+                    <div class="description absolute inset-0 bg-customBlue bg-opacity-50 p-4 text-white text-center transform translate-y-full transition-transform duration-300 group-hover:translate-y-0 flex items-center justify-center z-20">
+                    </div>
+                    <div class="text-white h-[150%] font-poppins flex flex-col justify-center align-middle text-center text-sm w-[90%] z-20 transform duration-200 opacity-0 group-hover:opacity-100">
+                        <p class="transform -translate-y-[80%]">n every student, With a focus on academic excellence</p>
+                        <br>
+                        <a class="font-bold absolute transform translate-x-[120%] translate-y-[240%]">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card-container group relative w-[300px] h-[300px] rounded-lg shadow-lg overflow-hidden flex justify-center align-middle" style="background-image: url('../assets/bg-black.webp');">
+                    <div class="absolute top-[50%] left-0 right-0 flex flex-col items-center justify-center z-30 transition-transform duration-300 group-hover:-translate-y-[100%]">
+                        <img src="../assets/Hogwarts.webp" alt="Icon" class="w-[100px] h-[100px]">
+                        <p class="font-poppins font-bold text-xl text-white">Powerfull Achievement</p>
+                    </div>
+                    <div class="description absolute inset-0 bg-customRed bg-opacity-50 p-4 text-white text-center transform translate-y-full transition-transform duration-300 group-hover:translate-y-0 flex items-center justify-center z-20">
+                    </div>
+                    <div class="text-white h-[150%] font-poppins flex flex-col justify-center align-middle text-center text-sm w-[90%] z-20 transform duration-200 opacity-0 group-hover:opacity-100">
+                        <p class="transform -translate-y-[80%]">n every student, With a focus on academic excellence</p>
+                        <br>
+                        <a class="font-bold absolute transform translate-x-[120%] translate-y-[240%]">Learn More</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </article>    
-    <div class="card-container group relative w-[300px] h-[300px] bg-white rounded-lg shadow-lg overflow-hidden">
-        <!-- Icon (always visible) -->
-        <div class="absolute top-[38%] left-0 right-0 flex items-center justify-center z-10 transition-transform duration-300 group-hover:translate-y-[-50%]">
-            <img src="../assets/Hogwarts.webp" alt="Icon" class="w-[150px] h-[150px]">
-        </div>
-        <!-- Hidden description -->
-        <div class="description absolute inset-0 bg-red-600 bg-opacity-50 p-4 text-white text-center transform translate-y-full transition-transform duration-300 group-hover:translate-y-0 flex items-center justify-center z-20">
-            <p>This is the description of the card. It will cover the full card on hover!</p>
-        </div>
-    </div>      
+    </div>        
     <footer class="w-full bg-gray-950">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3 gap-y-8 md:gap-8 py-8 max-w-sm mx-auto sm:max-w-3xl lg:max-w-full">
