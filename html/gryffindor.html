@@ -6,6 +6,45 @@
     <link href="../src/output.css" rel="stylesheet">
     <link rel="icon" href="../assets/head-logo.webp" type="image/x-icon"> 
     <style>
+     body {
+        position: relative;
+        margin: 0;
+        min-height: 100vh;
+    }
+
+    body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('../assets/bg-red.webp');
+        background-repeat: repeat;
+        background-position: center;
+        opacity: 0.3;
+        z-index: -1;
+    }
+    .fade-in.show {
+    opacity: 1; 
+    transform: translateY(0);
+    }
+
+
+        @keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    }
+
+    .fade-in {
+    animation: fadeIn 2s ease-out forwards;
+    }
         #menu-toggle:checked ~ #menu-content {
             display: flex;
         }
@@ -22,7 +61,22 @@
                 display: flex;
             }
         }
-        
+        #menu-toggle:checked ~ #menu-content {
+            display: flex;
+        }
+
+        #menu-toggle {
+            display: none;
+        }
+
+        @media (max-width: 1024px) {
+            .nav-links {
+                display: none;
+            }
+            #menu-toggle:checked ~ .nav-links {
+                display: flex;
+            }
+        }
     </style>
 </head>
 <body>
@@ -63,7 +117,7 @@
             <div class="lg:hidden flex items-center lg-auto">
                 <input type="checkbox" id="menu-toggle" class="hidden">
                 <label for="menu-toggle" class="flex justify-center items-center p-2 cursor-pointer">
-                    <span class="text-gray-500">☰</span>
+                    <span class="text-gray-500"></span>
                 </label>
     
                 <div class="hidden flex-col space-y-2 p-4 bg-white border border-gray-200 absolute right-0 top-full nav-links" id="menu-content">
@@ -90,7 +144,28 @@
                 </div>
             </div>
         </div>
-    </nav>  
+    </nav> 
+
+    <section class="relative">
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="w-full h-full flex items-center justify-center bg-transparent">
+                <video autoplay muted loop class="absolute inset-0 object-cover w-full h-full">
+                    <source src="../assets/Gryffindor_profile.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <div class="relative text-center py-24 lg:py-56 fade-in">
+            <div class="text-9xl font-extrabold text-white"> Gryffindor </div>
+        </div>
+    </section>
+    
+
+    <section relative flex flex-col items-center justify-center>
+        <div>
+
+        </div>
+    </section>
 
     <footer class="w-full bg-gray-900">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
