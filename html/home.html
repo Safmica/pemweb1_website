@@ -25,6 +25,28 @@
         opacity: 0.3;
         z-index: -1;
     }
+
+    .dumbledore {
+        position: relative;
+        margin: 0;
+        min-height: 100vh;
+        z-index:0;
+    }
+
+    .dumbledore::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('../assets/bg-dumbledore.webp');
+        background-repeat: repeat;
+        background-position: center;
+        background-size: cover;
+        opacity: 0.3;
+        z-index: -1;
+    }
         .fade-in {
     opacity: 0;
     transform: translateY(20px); 
@@ -183,14 +205,33 @@
             </div>
         </div>
         <div class="flex flex-col items-center">
-            <p class="font-harryPotter text-black text-custom-size2">BE WIZARDS WITH HOGWARTS!</p>
-            <p class="font-walkWay text-black text-custom-size1 transform -translate-y-[90px]">s</p>
-        </div>
-        <div class="bg-black w-full h-auto">
-            <div>
-                <img src="../assets/dumbledore-transformed.webp">
+            <div class="flex flex-row">
+                <p class="font-harryPotter text-customRed text-custom-size2">BE</p>
+                <p class="font-harryPotter text-transparent text-custom-size2">.</p>
+                <p class="font-harryPotter text-customBlue text-custom-size2">WIZARDS</p>
+                <p class="font-harryPotter text-transparent text-custom-size2">.</p>
+                <p class="font-harryPotter text-customYellow text-custom-size2 drop-shadow-xl">WITH</p>
+                <p class="font-harryPotter text-transparent text-custom-size2">.</p>
+                <p class="font-harryPotter text-customGreen text-custom-size2">HOGWARTS!</p>
             </div>
-        </div>                        
+            <p class="font-walkWay text-black text-custom-size1 transform -translate-y-[90px]">s</p>
+            <div class="w-[70%] justify-center -translate-y-[120px]">
+                <p class="font-poppins text-customRed text-center text-xl font-bold">At Hogwarts, we ignite the magic in every student! With a focus on academic excellence, enchanting experiences, and lifelong friendships, we prepare young witches and wizards to thrive in and beyond the classroom. Join us and embark on a magical journey that shapes your future!</p>
+            </div>
+        </div>
+        <div class="bg-black w-full h-auto group flex flex-row dumbledore overflow-hidden justify-center items-center">
+            <div class="h-[500px]">
+                <img src="../assets/dumbledore-transformed.webp" class="w-[1000px]">
+            </div>
+            <div class="w-[1000px] items-center justify-center">
+                <p class="font-ananda opacity-0 text-white text-center text-6xl transition-opacity transform -translate-x-10 duration-1000 group-hover:opacity-100">
+                    We ignite the magic in every student, With a focus on academic excellence
+                </p>
+                <p class="font-poppins opacity-0 text-white text-center text-xl transition-opacity transform -translate-x-10 duration-1000 group-hover:opacity-100">
+                    - Albus Dumbledore -
+                </p>
+            </div>
+        </div>                                      
         <div class="bg-white w-3/4 h-auto flex flex-col items-center justify-center space-y-2">
             <div class="bg-gray-50 py-12">
                 <h2 class="text-3xl font-bold text-center text-blue-900 mb-10">Our Impact</h2>
