@@ -135,6 +135,13 @@
     font-style: italic;
 }
 
+@font-face {
+    font-family: 'Walkway';
+    src: url('../fonts/Walkway.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
