@@ -6,6 +6,25 @@
     <link href="../src/output.css" rel="stylesheet">
     <link rel="icon" href="../assets/head-logo.webp" type="image/x-icon">  
     <style>
+        body {
+        position: relative;
+        margin: 0;
+        min-height: 100vh;
+    }
+
+    body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('../assets/bg.webp');
+        background-repeat: repeat;
+        background-position: center;
+        opacity: 0.3;
+        z-index: -1;
+    }
         #content {
             opacity: 0;
             animation: fadeIn 4s forwards 10s;
@@ -51,7 +70,7 @@
         }
     </style>
 </head>
-<body class="bg-gray-100 p-8>
+<body>
     <nav class="bg-white border-gray-200">
         <div class="flex flex-wrap items-center justify-between mx-auto p-2">
             <a class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -88,7 +107,7 @@
     </nav> 
     <section class="relative flex flex-col items-center justify-center">
         <div id="custom-controls-gallery" class="relative w-full" data-carousel="slide">
-            <img src="../assets/achievement-1.jpg" alt="hogwarts">
+            <img src="../assets/achievement-1.jpg" loading="lazy" alt="hogwarts">
         </div>
         <div class="bg-white w-[1000px] h-[200px] flex flex-col items-center justify-center space-y-2 transform -translate-y-1/2">
             <h3 class="text-2xl font-semibold text-customRed">Achievement</h3>
@@ -96,193 +115,195 @@
             <div class="w-20 h-1 bg-customRed"></div>
         </div>
     </section>
+    <section> 
+        <!-- Container untuk Grafik -->
+        <div class="group max-h-full max-w-6xl mx-auto py-12 bg-white shadow-md mt-10 rounded-lg">
+            <h2 class="text-5xl font-bold text-center mb-6 font-harryPotter transform transition-transform duration-300 group-hover:scale-125">Non Academic Achievement Hogwarts Bar Chart</h2>
+            
+            <!-- Label dan Grafik Batang -->
+            <div class="space-y-4 gap-y-6">
+            <!-- Bar 1 -->
+            <div class="flex items-center">
+                <div class="w-1/4 text-center text-gray-700 font-extrabold transition duration-300 group-hover:text-customBlue">Ravenclaw</div>
+                <div class="w-full bg-gray-200 rounded-lg">
+                <div class="bg-blue-500 h-6 rounded-lg" style="width: 70%"></div>
+                
+                </div>
+                <div class="ml-2 text-cust pr-20 transform transition-transform duration-300 group-hover:rotate-3 group-hover:text-customBlue">70%</div>
+            </div>
+
+            <!-- Bar 2 -->
+            <div class="flex items-center">
+                <div class="w-1/4 text-center text-gray-700 font-extrabold transition duration-300 group-hover:text-customGreen">Slytherin</div>
+                <div class="w-full bg-gray-200 rounded-lg">
+                <div class="bg-green-500 h-6 rounded-lg" style="width: 50%"></div>
+                </div>
+                <div class="ml-2 text-gray-600 pr-20 transform transition-transform duration-300 group-hover:rotate-3 group-hover:text-customGreen">50%</div>
+            </div>
+
+            <!-- Bar 3 -->
+            <div class="flex items-center">
+                <div class="w-1/4 text-center text-gray-700 font-extrabold transition duration-300 group-hover:text-customRed">Gryyfindor</div>
+                <div class="w-full bg-gray-200 rounded-lg">
+                <div class="bg-red-500 h-6 rounded-lg" style="width: 90%"></div>
+                </div>
+                <div class="ml-2 text-gray-600 pr-20 transform transition-transform duration-300 group-hover:rotate-3 group-hover:text-customRed">90%</div>
+            </div>
+
+            <!-- Bar 4 -->
+            <div class="flex items-center">
+                <div class="w-1/4 text-center text-gray-700 font-extrabold transition duration-300 group-hover:text-customYellow">Hufflepuff</div>
+                <div class="w-full bg-gray-200 rounded-lg">
+                <div class="bg-yellow-500 h-6 rounded-lg" style="width: 30%"></div>
+                </div>
+                <div class="ml-2 text-gray-600 pr-20 transform transition-transform duration-300 group-hover:rotate-3 group-hover:text-customYellow">30%</div>
+            </div>
+            </div>
+        </div>
+        <br><br><br><br><br><br><br>      
+    </section>
     <!-- Grid container -->
     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-7 max-w-full mx-4 lg:mx-10 py-5 mb-16">
 
         <!-- Card 1 -->
-        <div class="card bg-white p-4 rounded-lg shadow-lg overflow-hidden group transition duration-300 group hover:bg-gray-100 hover:shadow-xl mb-32">
+        <div class="card p-4 rounded-lg overflow-hidden group transition duration-300 group mb-32">
             <div class="relative overflow-hidden rounded-lg">
-            <img src="../assets/GhinnyNA.webp" alt="Harry Potter" class="w-full h-90 object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-95 group-hover:rotate-3">
+            <img src="../assets/GhinnyNA.webp" loading="lazy" alt="Ghinny Weasley" class="w-full h-full object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-125 group-hover:rotate-6">
             </div>
-            <div class="p-4 py-9">
-                <h3 class="text-2xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customRed py-4">The Captain of Gryffindor Quidditch Team</h3>
-                <p class="text-gray-600 text-justify">Ginny Weasley, a talented Quidditch player, played as a Seeker and Chaser for the Gryffindor Quidditch team, contributing significantly to their victories.</p>
+            <div class="p-4 py-5">
+                <h3 class="text-4xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customRed py-5 font-harryPotter">The Captain of Gryffindor Quidditch Team</h3>
+                <p class="text-gray-600 text-justify">Ginny Weasley, a talented Quidditch player, played as a Seeker and Chaser for the Gryffindor Quidditch team, contributing significantly to their victories. Her skills and determination earned her a permanent place on the team.</p>
                 <div class="h-1 bg-gray-300 transition duration-300 group-hover:bg-customRed"></div>
             </div>
         </div>
         
         <!-- Card 2 -->
-        <div class="card bg-white p-4 rounded-lg shadow-lg overflow-hidden group transition duration-300 group hover:bg-gray-100 hover:shadow-xl mb-32">
+        <div class="card p-4 rounded-lg overflow-hidden group transition duration-300 group mb-32">
             <div class="relative overflow-hidden rounded-lg">
-            <img src="../assets/ErnieNA.webp" alt="Harry Potter" class="w-full h-90 object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-95 group-hover:rotate-3">
+            <img src="../assets/ErnieNA.webp" loading="lazy" alt="Ernie Macmillan" class="w-full h-full object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-125 group-hover:rotate-6">
             </div>
             <div class="p-4 py-3">
-                <h3 class="text-2xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customYellow py-4">The Member of Dumbledore's Army</h3>
+                <h3 class="text-4xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customYellow py-4 font-harryPotter">The Member of Dumbledore's Army</h3>
                 <p class="text-gray-600 text-justify">Ernie Macmillan, a Hufflepuff student at Hogwarts School of Witchcraft and Wizardry, joined Dumbledore's Army in his fifth year. He became a prefect in his fifth year. He was known for his fairness, loyalty, and diligence.</p>
                 <div class="h-1 bg-gray-300 transition duration-300 group-hover:bg-customYellow"></div>
             </div>
         </div>
         
         <!-- Card 3 -->
-        <div class="card bg-white p-4 rounded-lg shadow-lg overflow-hidden group transition duration-300 group hover:bg-gray-100 hover:shadow-xl mb-32">
+        <div class="card p-4 rounded-lg overflow-hidden group transition duration-300 group mb-32">
             <div class="relative overflow-hidden rounded-lg">
-            <img src="../assets/DracoNA.webp" alt="Harry Potter" class="w-full h-90 object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-95 group-hover:rotate-3">
+            <img src="../assets/DracoNA.webp" loading="lazy" alt="Draco Malfoy" class="w-full h-full object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-125 group-hover:rotate-6">
             </div>
-            <div class="p-4 py-16">
-                <h3 class="text-2xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customGreen py-1">The Member of Slytherin Quidditch Team</h3>
-                <p class="text-gray-600 text-justify py-4">Draco Malfoy, a prominent Slytherin student, played the role of Seeker in the Slytherin Quidditch Team at Hogwarts, largely due to his father's financial support. His status made him a key player.</p>
+            <div class="p-4 py-15">
+                <h3 class="text-4xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customGreen font-harryPotter py-8">The Member of Slytherin Quidditch Team</h3>
+                <p class="text-gray-600 text-justify">Draco Malfoy, a prominent Slytherin student, played the role of Seeker in the Slytherin Quidditch Team at Hogwarts, largely due to his father's financial support. His status made him a key player.</p>
                 <div class="h-1 bg-gray-300 transition duration-300 group-hover:bg-customGreen"></div>
             </div>
         </div>
         
         <!-- Card 4 -->
-        <div class="card bg-white p-4 rounded-lg shadow-lg overflow-hidden group transition duration-300 group hover:bg-gray-100 hover:shadow-xl mb-32">
-            <img src="../assets/LunaNA.webp" alt="Card Image" class="w-full h-90 object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-95 group-hover:rotate-3">
+        <div class="card p-4 rounded-lg overflow-hidden group transition duration-300 group mb-32">
+            <div class="relative overflow-hidden rounded-lg">
+            <img src="../assets/LunaNA.webp" loading="lazy" alt="Luna Lovegood" class="w-full h-full object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-125 group-hover:rotate-6">
+            </div>
             <div class="p-4">
-                <h3 class="text-2xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customBlue py-2">The Member of Dumbledore's Army</h3>
+                <h3 class="text-4xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customBlue py-2 font-harryPotter">The Member of Dumbledore's Army</h3>
                 <p class="text-gray-600 text-justify">Luna Lovegood, a key member of Dumbledore's Army, was a dedicated and loyal member of the group, despite being kidnapped by Death Eaters. Despite her loyalty, she played a crucial role in the group's efforts.</p>
                 <div class="h-1 bg-gray-300 transition duration-300 group-hover:bg-customBlue"></div>
             </div>
         </div>
 
         <!-- Card 5 -->
-        <div class="card bg-white p-4 rounded-lg shadow-lg overflow-hidden group transition duration-300 group hover:bg-gray-100 hover:shadow-xl mb-32">
-            <img src="../assets/HermioneNA.webp" alt="Hermione Granger" class="w-full h-90 object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-95 group-hover:rotate-3">
-            <div class="p-4 py-4">
-                <h3 class="text-2xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customRed py-2">The Founder of Society for the Promotion of Elfish Welfare</h3>
+        <div class="card p-4 rounded-lg overflow-hidden group transition duration-300 mb-32">
+            <div class="relative overflow-hidden rounded-lg">
+            <img src="../assets/HermioneNA.webp" loading="lazy" alt="Hermione Granger" class="w-full h-full object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-125 group-hover:rotate-6">
+            </div>
+            <div class="p-4 py-5">
+                <h3 class="text-4xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customRed py-6 font-harryPotter">The Founder of Society for the Promotion of Elfish Welfare</h3>
                 <p class="text-gray-600 text-justify">Hermione Granger, a Hogwarts student, founded the Society for the Promotion of Elfish Welfare in 1994 to improve the treatment of house-elves. Hermione's dedication to improving their lives remained unwavering.</p>
                 <div class="h-1 bg-gray-300 transition duration-300 group-hover:bg-customRed"></div>
             </div>
         </div>
         
         <!-- Card 6 -->
-        <div class="card bg-white p-4 rounded-lg shadow-lg overflow-hidden group transition duration-300 group hover:bg-gray-100 hover:shadow-xl mb-32">
+        <div class="card p-4 rounded-lg overflow-hidden group transition duration-300 group mb-32">
             <div class="relative overflow-hidden rounded-lg">
-            <img src="../assets/CedricNA.webp" alt="Harry Potter" class="w-full h- object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-95 group-hover:rotate-3">
+            <img src="../assets/CedricNA.webp" loading="lazy" alt="Cedric Diggory" class="w-full h-full object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-125 group-hover:rotate-6">
             </div>
             <div class="p-4 py-8">
-                <h3 class="text-2xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customYellow py-3">The Talented Seeker of Hufflepuff Quidditch team</h3>
+                <h3 class="text-4xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customYellow py-3 font-harryPotter">The Talented Seeker of Hufflepuff Quidditch team</h3>
                 <p class="text-gray-600 text-justify">Cedric Diggory was a talented Seeker for the Hufflepuff Quidditch team at Hogwarts, known for his exceptional skills and sportsmanship. He caught the Golden Snitch and defeated Harry Potter.</p>
                 <div class="h-1 bg-gray-300 transition duration-300 group-hover:bg-customYellow"></div>
             </div>
         </div>
         
         <!-- Card 7 -->
-        <div class="card bg-white p-4 rounded-lg shadow-lg overflow-hidden group transition duration-300 group hover:bg-gray-100 hover:shadow-xl mb-32">
+        <div class="card p-4 rounded-lg overflow-hidden group transition duration-300 group mb-32">
             <div class="relative overflow-hidden rounded-lg">
-            <img src="../assets/RegulusNA.webp" alt="Harry Potter" class="w-full h- object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-95 group-hover:rotate-3">
+            <img src="../assets/RegulusNA.webp" loading="lazy" alt="Regulus Black" class="w-full h-full object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-125 group-hover:rotate-6">
             </div>
             <div class="p-4 py-2">
-                <h3 class="text-2xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customGreen py-2">The Former Death Eater</h3>
+                <h3 class="text-4xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customGreen py-2 font-harryPotter">The Former Death Eater</h3>
                 <p class="text-gray-600 text-justify">Regulus Black, a Death Eater in the Harry Potter series, disillusioned with Voldemort's true nature and atrocities. He turned against him, discovering Voldemort's secret Horcruxes, including the Slytherin locket.</p>
                 <div class="h-1 bg-gray-300 transition duration-300 group-hover:bg-customGreen"></div>
             </div>
         </div>
         
         <!-- Card 8 -->
-        <div class="card bg-white p-4 rounded-lg shadow-lg overflow-hidden group transition duration-300 group hover:bg-gray-100 hover:shadow-xl mb-32">
-            <img src="../assets/ChoChangNA.webp" alt="Card Image" class="w-full h-90 object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-95 group-hover:rotate-3">
+        <div class="card p-4 rounded-lg overflow-hidden group transition duration-300 group mb-32">
+            <div class="relative overflow-hidden rounded-lg">
+            <img src="../assets/ChoChangNA.webp" loading="lazy" alt="Cho Chang" class="w-full h-full object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-125 group-hover:rotate-6">
+            </div>
             <div class="p-4 py-4">
-                <h3 class="text-2xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customBlue p-2"> The member of  Ravenclaw Quidditch team and Dumbledore's Army</h3>
-                <p class="text-gray-600 text-justify">Cho Chang, a Ravenclaw Quidditch member and key member of Dumbledore's Army. After her boyfriend's death, she joined Dumbledore's Army to teach defensive magic.</p>
+                <h3 class="text-4xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customBlue p-1 font-harryPotter"> The member of  Ravenclaw Quidditch team and Dumbledore's Army</h3>
+                <p class="text-gray-600 text-justify">Cho Chang, a Ravenclaw Quidditch member and key member of Dumbledore's Army. She joined Dumbledore's Army to teach defensive magic.</p>
                 <div class="h-1 bg-gray-300 transition duration-300 group-hover:bg-customBlue"></div>
             </div>
         </div>
-        
-        <!-- Card 9 -->
-        <div class="card bg-white p-4 rounded-lg shadow-lg overflow-hidden group transition duration-300 group hover:bg-gray-100 hover:shadow-xl mb-32">
-            <img src="../assets/RonNA.webp" alt="Card Image" class="w-full h-90 object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-95 group-hover:rotate-3">
-            <div class="p-4 py-6">
-                <h3 class="text-2xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customRed py-2">The Keeper of Gryffindor Quidditch team</h3>
-                <p class="text-gray-600 text-justify">Ron Weasley, the Keeper for the Gryffindor Quidditch team, faced criticism and challenges during his fifth year at Hogwarts. Despite initial self-doubt, he grew and gained confidence.</p>
-                <div class="h-1 bg-gray-300 transition duration-300 group-hover:bg-customRed"></div>
-            </div>
-        </div>
-        
-        <!-- Card 10 -->
-        <div class="card bg-white p-4 rounded-lg shadow-lg overflow-hidden group transition duration-300 group hover:bg-gray-100 hover:shadow-xl mb-32">
-            <div class="relative overflow-hidden rounded-lg">
-            <img src="../assets/NymphadoraNA.webp" alt="Harry Potter" class="w-full h- object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-95 group-hover:rotate-3">
-            </div>
-            <div class="p-4">
-                <h3 class="text-2xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customYellow">The Member of the Order of the Phoenix</h3>
-                <p class="text-gray-600 text-justify">Nymphadora Tonks is a member of the Order of the Phoenix. Known for her metamorphmagic abilities, Tonks uses her vibrant violet hair and clumsy demeanor to engage in battles like the Battle of Hogwarts.</p>
+    </div>
+    <section class="group">
+    <!-- Container untuk Trophy Card -->
+    <div class="group max-h-full max-w-6xl mx-auto py-12 bg-white shadow-md mt-10 rounded-lg">
+        <h2 class="text-6xl font-bold text-center mb-6 font-harryPotter transform transition-transform duration-300 group-hover:scale-125">Hogwarts Trophy Achievement</h2>
+    <!-- Trophy Card -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 max-w-full mx-4 lg:mx-10 py-5 mb-10">
+
+        <!-- Card 1 -->
+        <div class="group card p-4 rounded-lg overflow-hidden transition duration-300 mb-32">
+            <div class="h-auto w-auto overflow-hidden rounded-lg">
+                <img src="../assets/HouseCup.webp" loading="lazy" alt="House Cuo" class="rounded-t-lg  object-cover  transform transition-transform duration-300 group-hover:scale-125 w-full h-full">
+            </div>            
+            <div class="p-4 py-4">
+                <h3 class="text-5xl text-center mb-2 transition duration-300 group-hover:text-customYellow py-1 font-harryPotter font-extrabold">The House Cup</h3>
+                <p class="text-gray-600 text-justify">The winner of Houses was Hufflepuff, crowned after a series of exciting trivia battles. The winning trio, consisting of David Martin, Luke Neville, and Adriana Redding, showcased their house traits of loyalty and patience to overcome competitors from Ravenclaw and Slytherin in the grand finale.</p>
                 <div class="h-1 bg-gray-300 transition duration-300 group-hover:bg-customYellow"></div>
             </div>
-        </div> 
+        </div>
 
-        <!-- Card 11 -->
-        <div class="card bg-white p-4 rounded-lg shadow-lg overflow-hidden group transition duration-300 group hover:bg-gray-100 hover:shadow-xl mb-32">
-            <div class="relative overflow-hidden rounded-lg">
-            <img src="../assets/HarryNA.webp" alt="Harry Potter" class="w-full h- object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-95 group-hover:rotate-3">
-            </div>
-            <div class="p-4">
-                <h3 class="text-2xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customRed">The Winner of Triwizard Tournament</h3>
-                <p class="text-gray-600 text-justify">Harry Potter, underage and selected as a fourth Triwizard Champion, won the 1994 Triwizard Tournament. Despite dark forces and manipulation, he demonstrated bravery and skill in the tournament.</p>
+        <!-- Card 2 -->
+        <div class="group card p-4 rounded-lg overflow-hidden transition duration-300 mb-32">
+            <div class="h-auto w-auto overflow-hidden rounded-lg">
+                <img src="../assets/TriwizardTrophy.webp" loading="lazy" alt="Triwizard Trophy" class="rounded-t-lg  object-cover  transform transition-transform duration-300 group-hover:scale-125 w-full h-full">
+            </div>            
+            <div class="p-4 py-4">
+                <h3 class="text-5xl text-center mb-2 transition duration-300 group-hover:text-customRed py-1 font-harryPotter font-extrabold">Triwizard Tournament Trophy</h3>
+                <p class="text-gray-600 text-justify">The winner of the Triwizard Tournament in the 1994-1995 competition was Harry Potter and Cedric Diggory, who both reached the Triwizard Cup simultaneously in the final task.</p>
                 <div class="h-1 bg-gray-300 transition duration-300 group-hover:bg-customRed"></div>
             </div>
         </div>
-
-        <!-- Card 12 -->
-        <div class="card bg-white p-4 rounded-lg shadow-lg overflow-hidden group transition duration-300 group hover:bg-gray-100 hover:shadow-xl mb-32">
-            <div class="relative overflow-hidden rounded-lg">
-            <img src="../assets/HarryNA.webp" alt="Harry Potter" class="w-full h- object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-95 group-hover:rotate-3">
-            </div>
-            <div class="p-4">
-                <h3 class="text-2xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customRed">The Winner of Triwizard Tournament</h3>
-                <p class="text-gray-600 text-justify">Harry Potter, underage and selected as a fourth Triwizard Champion, won the 1994 Triwizard Tournament. Despite dark forces and manipulation, he demonstrated bravery and skill in the tournament.</p>
+        <!-- Card 3 -->
+        <div class="group card p-4 rounded-lg overflow-hidden transition duration-300 mb-32">
+            <div class="h-auto w-auto overflow-hidden rounded-lg">
+                <img src="../assets/QuidditchCup.webp" loading="lazy" alt="Quidditch Cup" class="rounded-t-lg  object-cover  transform transition-transform duration-300 group-hover:scale-125 w-full h-full">
+            </div>            
+            <div class="p-4 py-4">
+                <h3 class="text-5xl text-center mb-2 transition duration-300 group-hover:text-customRed py-1 font-harryPotter font-extrabold">The Quidditch Cup</h3>
+                <p class="text-gray-600 text-justify">Gryffindor, led by Captain Oliver Wood, won the Hogwarts Quidditch Cup in 1994, 1996, and 1997, showcasing the competitive spirit and talent of its student teams. Harry Potter's exceptional skills as Seeker and Ginny Weasley contributed to their success.</p>
                 <div class="h-1 bg-gray-300 transition duration-300 group-hover:bg-customRed"></div>
             </div>
-        </div> 
-
-        <!-- Card 13 -->
-        <div class="card bg-white p-4 rounded-lg shadow-lg overflow-hidden group transition duration-300 group hover:bg-gray-100 hover:shadow-xl mb-32">
-            <div class="relative overflow-hidden rounded-lg">
-            <img src="../assets/HarryNA.webp" alt="Harry Potter" class="w-full h- object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-95 group-hover:rotate-3">
-            </div>
-            <div class="p-4">
-                <h3 class="text-2xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customRed">The Winner of Triwizard Tournament</h3>
-                <p class="text-gray-600 text-justify">Harry Potter, underage and selected as a fourth Triwizard Champion, won the 1994 Triwizard Tournament. Despite dark forces and manipulation, he demonstrated bravery and skill in the tournament.</p>
-                <div class="h-1 bg-gray-300 transition duration-300 group-hover:bg-customRed"></div>
-            </div>
-        </div> 
-
-        <!-- Card 14 -->
-        <div class="card bg-white p-4 rounded-lg shadow-lg overflow-hidden group transition duration-300 group hover:bg-gray-100 hover:shadow-xl mb-32">
-            <div class="relative overflow-hidden rounded-lg">
-            <img src="../assets/HarryNA.webp" alt="Harry Potter" class="w-full h- object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-95 group-hover:rotate-3">
-            </div>
-            <div class="p-4">
-                <h3 class="text-2xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customRed">The Winner of Triwizard Tournament</h3>
-                <p class="text-gray-600 text-justify">Harry Potter, underage and selected as a fourth Triwizard Champion, won the 1994 Triwizard Tournament. Despite dark forces and manipulation, he demonstrated bravery and skill in the tournament.</p>
-                <div class="h-1 bg-gray-300 transition duration-300 group-hover:bg-customRed"></div>
-            </div>
-        </div> 
-
-        <!-- Card 15 -->
-        <div class="card bg-white p-4 rounded-lg shadow-lg overflow-hidden group transition duration-300 group hover:bg-gray-100 hover:shadow-xl mb-32">
-            <div class="relative overflow-hidden rounded-lg">
-            <img src="../assets/HarryNA.webp" alt="Harry Potter" class="w-full h- object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-95 group-hover:rotate-3">
-            </div>
-            <div class="p-4">
-                <h3 class="text-2xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customRed">The Winner of Triwizard Tournament</h3>
-                <p class="text-gray-600 text-justify">Harry Potter, underage and selected as a fourth Triwizard Champion, won the 1994 Triwizard Tournament. Despite dark forces and manipulation, he demonstrated bravery and skill in the tournament.</p>
-                <div class="h-1 bg-gray-300 transition duration-300 group-hover:bg-customRed"></div>
-            </div>
-        </div> 
-
-        <!-- Card 16 -->
-        <div class="card bg-white p-4 rounded-lg shadow-lg overflow-hidden group transition duration-300 group hover:bg-gray-100 hover:shadow-xl mb-32">
-            <div class="relative overflow-hidden rounded-lg">
-            <img src="../assets/HarryNA.webp" alt="Harry Potter" class="w-full h- object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-95 group-hover:rotate-3">
-            </div>
-            <div class="p-4">
-                <h3 class="text-2xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customRed">The Winner of Triwizard Tournament</h3>
-                <p class="text-gray-600 text-justify">Harry Potter, underage and selected as a fourth Triwizard Champion, won the 1994 Triwizard Tournament. Despite dark forces and manipulation, he demonstrated bravery and skill in the tournament.</p>
-                <div class="h-1 bg-gray-300 transition duration-300 group-hover:bg-customRed"></div>
-            </div>
-        </div> 
+        </div>
     </div>
+    </section>
     
     <!-- Footer -->
     <footer class="w-full bg-gray-950 pt-8 pb-4">
@@ -290,7 +311,7 @@
           <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3 gap-y-8 md:gap-8 py-8 max-w-sm mx-auto sm:max-w-3xl lg:max-w-full">
             <div class="col-span-full mb-10 lg:col-span-2 lg:mb-0">
               <div class="flex justify-center lg:justify-start">
-                <img src="../assets/Hogwarts.webp" class="h-20">
+                <img src="../assets/Hogwarts.webp" loading="lazy" class="h-20">
                 <span class="self-center text-5xl font-semibold whitespace-nowrap flex font-harryPotter pl-5 ">
                     <p class="text-customRed">H</p>
                     <p class="text-customYellow">O</p>
@@ -344,7 +365,7 @@
                     <span class="text-sm text-gray-500 ">©<a href="https://pagedone.io/">Copyright 2024 kelompok 4</a>, All rights reserved.</span>
                     <div class="flex mt-4 space-x-4 sm:justify-center lg:mt-0 ">
                         <a href="https://github.com/Safmica/pemweb1_website" class="relative w-8 h-8 rounded-full transition-all duration-500 flex justify-center items-center bg-black hover:bg-gray-900 hover:opacity-50">
-                            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Icon" width="40" height="40" class="rounded-full" />
+                            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" loading="lazy" alt="GitHub Icon" width="40" height="40" class="rounded-full" />
                         </a>                          
                         <a href="https://www.instagram.com/hogwartslegacy"  class="relative w-8 h-8 rounded-full transition-all duration-500 flex justify-center items-center bg-[linear-gradient(45deg,#FEE411_6.9%,#FEDB16_10.98%,#FEC125_17.77%,#FE983D_26.42%,#FE5F5E_36.5%,#FE2181_46.24%,#9000DC_85.57%)]  hover:bg-gradient-to-b from-gray-900 to-gray-900">
                             <svg class="w-[1.25rem] h-[1.125rem] text-white" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">

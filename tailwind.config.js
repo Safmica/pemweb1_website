@@ -7,6 +7,12 @@ module.exports = {
         harryPotter: ['harryPotter', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
         walkWay: ['Walkway', 'sans-serif'], 
+        billion: ['Billion', 'sans-serif'], 
+        retro: ['Retro', 'sans-serif'], 
+        winter: ['winter', 'sans-serif'], 
+        ananda: ['ananda', 'sans-serif'], 
+        anandablack: ['anandablack', 'sans-serif'], 
+        madina: ['Madina', 'sans-serif'], 
       },
       fontWeight: {
         thin: '100',
@@ -27,7 +33,8 @@ module.exports = {
         customGrey: '#bebebe',
       },
       fontSize: {
-        'custom-size': '10rem',
+        'custom-size1': '10rem',
+        'custom-size2': '5rem',
       },
     },
   },

@@ -142,6 +142,48 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Billion';
+    src: url('../fonts/Billion.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Retro';
+    src: url('../fonts/Retro.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'winter';
+    src: url('../fonts/winter.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ananda';
+    src: url('../fonts/ananda.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'anandablack';
+    src: url('../fonts/anandablack.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Madina';
+    src: url('../fonts/Madina.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -160,3 +202,8 @@ a:hover, button:hover {
 input[type="text"], textarea {
     cursor: url('../assets/cursor-hover.png'), auto;
 }
+
+.bg-custom-image {
+    @apply bg-cover bg-center;
+    background-image: url('../assets/bg.webp');
+  }
