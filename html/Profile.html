@@ -6,6 +6,25 @@
     <link href="../src/output.css" rel="stylesheet" />
     <link rel="icon" href="../assets/head-logo.webp" type="image/x-icon" />
     <style>
+      body {
+        position: relative;
+        margin: 0;
+        min-height: 100vh;
+    }
+
+    body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('../assets/bg-black.webp');
+        background-repeat: repeat;
+        background-position: center;
+        opacity: 0.5;
+        z-index: -1;
+    }
       #menu-toggle:checked ~ #menu-content {
         display: flex;
       }
@@ -612,7 +631,7 @@
     <section class="w-full bg-gradient-to-b from-white to-black py-32">
       <div class="container mx-auto">
         <div class="max-w-xl mb-16 text-center mx-auto">
-          <h1 class="font-bold text-slate-800 text-4xl capitalize mb-6">OUR VISION: A WORLD OF <span class="text-blue-600">MAGIC AND POSSIBILITY </span></h1>
+          <h1 class="font-bold text-slate-800 text-4xl capitalize mb-6">OUR VISION: A WORLD OF <span class="text-slate-600">MAGIC AND POSSIBILITY </span></h1>
           <p class="text-white capitalize">Our mission is to create a nurturing environment where young witches and wizards can unlock their potential and embrace their uniqueness. We strive to instill courage, wisdom, and loyalty, ensuring every student is prepared for the magical world.</p>
         </div>
         <div class="w-full flex space-x-2">
@@ -621,42 +640,280 @@
               <img src="../assets/Gryffindor.png" alt="" class="w-16 hover:scale-110 transition-all duration-500">
             </div>
             <div class="space-y-3">
-              <a href="" class="font-semibold text-xl text-slate-800 hover:text-red-600">Gryffindor</a>
+              <a href="" class="font-semibold text-xl text-slate-800 hover:text-customRed">Gryffindor</a>
               <p class="text-slate-500">Their daring, nerve, and chivalry set Gryffindors apart.</p>
             </div>
           </div>
           <div class="w-1/4 bg-white p-4 rounded-md shadow-md flex flex-col justify-center items-center text-center">
             <div class="mb-4">
-              <img src="../assets/Gryffindor.png" alt="" class="w-16 hover:scale-110 transition-all duration-500">
+              <img src="../assets/Slytherin.png" alt="" class="w-16 hover:scale-110 transition-all duration-500">
             </div>
             <div class="space-y-3">
-              <a href="" class="font-semibold text-xl text-slate-800 hover:text-red-600">Gryffindor</a>
-              <p class="text-slate-500">Their daring, nerve, and chivalry set Gryffindors apart.</p>
+              <a href="" class="font-semibold text-xl text-slate-800 hover:text-customGreen">Slytherin</a>
+              <p class="text-slate-500">Slytherin will help you on your way to greatness.</p>
             </div>
           </div>
           <div class="w-1/4 bg-white p-4 rounded-md shadow-md flex flex-col justify-center items-center text-center">
             <div class="mb-4">
-              <img src="../assets/Gryffindor.png" alt="" class="w-16 hover:scale-110 transition-all duration-500">
+              <img src="../assets/Ravenclaw.png" alt="" class="w-16 hover:scale-110 transition-all duration-500">
             </div>
             <div class="space-y-3">
-              <a href="" class="font-semibold text-xl text-slate-800 hover:text-red-600">Gryffindor</a>
-              <p class="text-slate-500">Their daring, nerve, and chivalry set Gryffindors apart.</p>
+              <a href="" class="font- semibold text-xl text-slate-800 hover:text-customBlue">Ravenclaw</a>
+              <p class="text-slate-500">Wit beyond measure is man's greatest treasure.</p>
             </div>
           </div>
           <div class="w-1/4 bg-white p-4 rounded-md shadow-md flex flex-col justify-center items-center text-center">
             <div class="mb-4">
-              <img src="../assets/Gryffindor.png" alt="" class="w-16 hover:scale-110 transition-all duration-500">
+              <img src="../assets/Hufflepuff.png" alt="" class="w-16 hover:scale-110 transition-all duration-500">
             </div>
             <div class="space-y-3">
-              <a href="" class="font-semibold text-xl text-slate-800 hover:text-red-600">Gryffindor</a>
-              <p class="text-slate-500">Their daring, nerve, and chivalry set Gryffindors apart.</p>
+              <a href="" class="font-semibold text-xl text-slate-800 hover:text-customYellow">Hufflepuff</a>
+              <p class="text-slate-500">You might belong in Hufflepuff, where they are just and loyal.</p>
             </div>
           </div>
 
         </div>
       </div>
     </section>
-   
+    <!-- VISI SECTION END -->
+
+    <!-- KEPALA SEKOLAH SECTION -->
+    <section class="w-full py-20">
+      <div class="container mx-auto">
+        <div class="max-w-xl mb-16 text-center mx-auto">
+          <h1 class="font-bold text-slate-800 text-4xl capitalize mb-6">HOGWARTS HEAD OF <span class="text-slate-600">ACADEMIC AFFAIRS</span></h1>
+           </div>
+
+           <div class="flex">
+            <div class="w-1/2 px-2">
+              <div class="w-full h-auto overflow-hidden rounded-md">
+                <img src="../assets/Dumbledorer.jpg" alt="" class="w-full h-full object-cover hover:scale-110 transition-all duration-500">
+              </div>
+            </div>
+
+            <div class="w-1/2 px-4">
+              <h1 class="text-2xl mb-8 max-w-sm font-bold text-slate-300">Professor Albus Dumbledore, Headmaster of Hogwarts School of Witchcraft and Wizardry</h1>
+              <h3 class="mb-4 font-semibold italic text-xl text-slate-300">Welcome to Hogwarts School of Witchcraft and Wizardry</h3>
+              <p class="max-w-md text-white font-normal capitalize mb-2 leading-relaxed">" To all who step through these hallowed halls, I bid you a most heartfelt welcome. Here at Hogwarts, you will find more than just classrooms and corridors; you will discover a place of learning, growth, and belonging. Magic runs through our veins, but it is friendship, courage, and curiosity that shape the true essence of our community.</p>
+              <p class="max-w-md text-white font-normal capitalize mb-10 leading-relaxed">Whether you are a bright-eyed student eager to embark on your journey or a traveler seeking a glimpse of our world, know that Hogwarts is always a home for those who seek knowledge with an open heart. Great challenges and even greater triumphs lie ahead, but fear not. As I have often said, 'Happiness can be found, even in the darkest of times, if one only remembers to turn on the light.'
+                Welcome to the magic, welcome to Hogwarts. "</p>
+                
+                <button class="flex gap-2 rounded-full bg-blue-600 text-black py-3 px-8 items-center font-semibold border border-blue-600 hover:bg-transparent hover:text-blue-600 transition-all duration-500">
+                  <span>Read More</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                  </svg> 
+                </button>
+              </div>
+           </div>
+      </div>
+    </section>
+   <!-- KEPALA SEKOLAH END -->
+
+
+   <!-- TEACHER SECTION -->
+    <div class="w-full py-20">
+      <div class="container mx-auto">
+        <div class="mx-auto text-center mb-16 space-y-4 max-w-xl">
+          <h2 class="font-bold text-slate-800 text-4xl capitalize">EDUCATORS</h2>
+          <P class="font-bold text-slate-600 text-2xl">HOGWARTS SCHOOL EDUCATORS</P>
+        </div>
+
+        <div class="w-full h-full px2 grid grid-cols-10 justify-between gap-2 space-x-2">
+          <div class="w-full col-span-2 mt-2 ml-2 bg-white rounded-md px-4 py-5">
+            <div class="flex flex-col items-center">
+              <div class="w-32 h-32 flex justify-center rounded-md items-center mb-6 mt-2">
+                <img src="../assets/Horace.webp" alt="" width="100%" class="rounded-md">
+              </div>
+              <a href="" class="block font-bold text-slate-800 hover:text-blue-700 text-lg mb-2">Horace</a>
+            </div>
+            <div class="flex justify-between items-center">
+              <div></div> <!-- Elemen kosong untuk mengisi space kiri -->
+              <a href="" class="font-medium text-sm text-blue-600">Details</a>
+            </div>
+          </div>
+          <div class="w-full col-span-2 mt-2 ml-2 bg-white rounded-md px-4 py-5">
+            <div class="flex flex-col items-center">
+              <div class="w-32 h-32 flex justify-center rounded-md items-center mb-6 mt-2">
+                <img src="../assets/Horace.webp" alt="" width="100%" class="rounded-md">
+              </div>
+              <a href="" class="block font-bold text-slate-800 hover:text-blue-700 text-lg mb-2">Horace</a>
+            </div>
+            <div class="flex justify-between items-center">
+              <div></div> <!-- Elemen kosong untuk mengisi space kiri -->
+              <a href="" class="font-medium text-sm text-blue-600">Details</a>
+            </div>
+          </div>
+          <div class="w-full col-span-2 mt-2 ml-2 bg-white rounded-md px-4 py-5">
+            <div class="flex flex-col items-center">
+              <div class="w-32 h-32 flex justify-center rounded-md items-center mb-6 mt-2">
+                <img src="../assets/Horace.webp" alt="" width="100%" class="rounded-md">
+              </div>
+              <a href="" class="block font-bold text-slate-800 hover:text-blue-700 text-lg mb-2">Horace</a>
+            </div>
+            <div class="flex justify-between items-center">
+              <div></div> <!-- Elemen kosong untuk mengisi space kiri -->
+              <a href="" class="font-medium text-sm text-blue-600">Details</a>
+            </div>
+          </div>
+          <div class="w-full col-span-2 mt-2 ml-2 bg-white rounded-md px-4 py-5">
+            <div class="flex flex-col items-center">
+              <div class="w-32 h-32 flex justify-center rounded-md items-center mb-6 mt-2">
+                <img src="../assets/Horace.webp" alt="" width="100%" class="rounded-md">
+              </div>
+              <a href="" class="block font-bold text-slate-800 hover:text-blue-700 text-lg mb-2">Horace</a>
+            </div>
+            <div class="flex justify-between items-center">
+              <div></div> <!-- Elemen kosong untuk mengisi space kiri -->
+              <a href="" class="font-medium text-sm text-blue-600">Details</a>
+            </div>
+          </div>
+          <div class="w-full col-span-2 mt-2 ml-2 bg-white rounded-md px-4 py-5">
+            <div class="flex flex-col items-center">
+              <div class="w-32 h-32 flex justify-center rounded-md items-center mb-6 mt-2">
+                <img src="../assets/Horace.webp" alt="" width="100%" class="rounded-md">
+              </div>
+              <a href="" class="block font-bold text-slate-800 hover:text-blue-700 text-lg mb-2">Horace</a>
+            </div>
+            <div class="flex justify-between items-center">
+              <div></div> <!-- Elemen kosong untuk mengisi space kiri -->
+              <a href="" class="font-medium text-sm text-blue-600">Details</a>
+            </div>
+          </div>
+          <div class="w-full col-span-2 mt-2 ml-2 bg-white rounded-md px-4 py-5">
+            <div class="flex flex-col items-center">
+              <div class="w-32 h-32 flex justify-center rounded-md items-center mb-6 mt-2">
+                <img src="../assets/Horace.webp" alt="" width="100%" class="rounded-md">
+              </div>
+              <a href="" class="block font-bold text-slate-800 hover:text-blue-700 text-lg mb-2">Horace</a>
+            </div>
+            <div class="flex justify-between items-center">
+              <div></div> <!-- Elemen kosong untuk mengisi space kiri -->
+              <a href="" class="font-medium text-sm text-blue-600">Details</a>
+            </div>
+          </div>
+          <div class="w-full col-span-2 mt-2 ml-2 bg-white rounded-md px-4 py-5">
+            <div class="flex flex-col items-center">
+              <div class="w-32 h-32 flex justify-center rounded-md items-center mb-6 mt-2">
+                <img src="../assets/Horace.webp" alt="" width="100%" class="rounded-md">
+              </div>
+              <a href="" class="block font-bold text-slate-800 hover:text-blue-700 text-lg mb-2">Horace</a>
+            </div>
+            <div class="flex justify-between items-center">
+              <div></div> <!-- Elemen kosong untuk mengisi space kiri -->
+              <a href="" class="font-medium text-sm text-blue-600">Details</a>
+            </div>
+          </div>
+          <div class="w-full col-span-2 mt-2 ml-2 bg-white rounded-md px-4 py-5">
+            <div class="flex flex-col items-center">
+              <div class="w-32 h-32 flex justify-center rounded-md items-center mb-6 mt-2">
+                <img src="../assets/Horace.webp" alt="" width="100%" class="rounded-md">
+              </div>
+              <a href="" class="block font-bold text-slate-800 hover:text-blue-700 text-lg mb-2">Horace</a>
+            </div>
+            <div class="flex justify-between items-center">
+              <div></div> <!-- Elemen kosong untuk mengisi space kiri -->
+              <a href="" class="font-medium text-sm text-blue-600">Details</a>
+            </div>
+          </div>
+          <div class="w-full col-span-2 mt-2 ml-2 bg-white rounded-md px-4 py-5">
+            <div class="flex flex-col items-center">
+              <div class="w-32 h-32 flex justify-center rounded-md items-center mb-6 mt-2">
+                <img src="../assets/Horace.webp" alt="" width="100%" class="rounded-md">
+              </div>
+              <a href="" class="block font-bold text-slate-800 hover:text-blue-700 text-lg mb-2">Horace</a>
+            </div>
+            <div class="flex justify-between items-center">
+              <div></div> <!-- Elemen kosong untuk mengisi space kiri -->
+              <a href="" class="font-medium text-sm text-blue-600">Details</a>
+            </div>
+          </div>
+          <div class="w-full col-span-2 mt-2 ml-2 bg-white rounded-md px-4 py-5">
+            <div class="flex flex-col items-center">
+              <div class="w-32 h-32 flex justify-center rounded-md items-center mb-6 mt-2">
+                <img src="../assets/Horace.webp" alt="" width="100%" class="rounded-md">
+              </div>
+              <a href="" class="block font-bold text-slate-800 hover:text-blue-700 text-lg mb-2">Horace</a>
+            </div>
+            <div class="flex justify-between items-center">
+              <div></div> <!-- Elemen kosong untuk mengisi space kiri -->
+              <a href="" class="font-medium text-sm text-blue-600">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TEACHER SECTION END -->
+
+    <!-- CONTACT SECTION -->
+    <div class="min-h-screen flex items-center justify-center py-10 px-4">
+      <div class="max-w-full w-full bg-gray-800 rounded-lg shadow-lg p-8">
+        <!-- Title -->
+        <h2 class="text-3xl font-bold text-center text-gray-100 mb-8">
+          <span class="text-gray-200">Contact</span> <span class="text-green-500">Us</span>
+        </h2>
+    
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Left Column: Google Maps -->
+          <div class="w-full">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15934.30371324138!2d104.70861961309061!3d-2.975704809647259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b76b19e610d47%3A0x2323a431db275885!2sBukit%20Siguntang!5e0!3m2!1sen!2sid!4v1696118194083!5m2!1sen!2sid"
+              width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              class="rounded-lg">
+            </iframe>
+          </div>
+    
+          <!-- Right Column: Form -->
+          <div class="space-y-4">
+            <!-- Text Above Form -->
+            <div class="text-center">
+              <h3 class="text-xl font-bold text-gray-100">
+                Have a Question? <br>
+                <span class="text-green-500">Get in Touch</span>
+              </h3>
+            </div>
+    
+            <!-- Form -->
+            <form action="#" method="POST" class="space-y-4">
+              <!-- Name and Email -->
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Name -->
+                <div>
+                  <label class="block text-gray-300">Your Name</label>
+                  <input type="text" name="name" placeholder="Your Name"
+                    class="w-full bg-gray-700 text-gray-100 border border-gray-600 rounded-md py-2 px-4 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                    value="Wahyu Trisno Aji">
+                </div>
+    
+                <!-- Email -->
+                <div>
+                  <label class="block text-gray-300">Email</label>
+                  <input type="email" name="email" placeholder="Your Email"
+                    class="w-full bg-gray-700 text-gray-100 border border-gray-600 rounded-md py-2 px-4 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                    value="wahyutrisnoaji123@gmail.com">
+                </div>
+              </div>
+    
+              <!-- Message -->
+              <div>
+                <label class="block text-gray-300">Message</label>
+                <textarea name="message" placeholder="Your question"
+                  class="w-full h-32 bg-gray-700 text-gray-100 border border-gray-600 rounded-md py-2 px-4 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"></textarea>
+              </div>
+    
+              <!-- Submit Button -->
+              <div class="flex justify-center">
+                <button type="submit"
+                  class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+                  Send
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
 
     <div>
     <br />
