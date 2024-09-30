@@ -1812,6 +1812,23 @@ video {
   stroke: #facc15;
 }
 
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.stroke-black {
+  stroke: #000;
+}
+
+.stroke-inherit {
+  stroke: inherit;
+}
+
+.stroke-2 {
+  stroke-width: 2;
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -3236,6 +3253,10 @@ input[type="text"], textarea {
 
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-3 {
