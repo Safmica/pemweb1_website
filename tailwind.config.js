@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       fontFamily: {
         harryPotter: ['harryPotter', 'sans-serif'],
-        poppins: ['Poppins', 'sans-serif'], 
+        poppins: ['Poppins', 'sans-serif'],
+        walkWay: ['Walkway', 'sans-serif'], 
       },
       fontWeight: {
         thin: '100',
@@ -24,6 +25,10 @@ module.exports = {
         customGreen: '#2a623d',
         customYellow: '#f0c75e',
         customGrey: '#bebebe',
+      },
+      fontSize: {
+        'custom-size1': '10rem',
+        'custom-size2': '5rem',
       },
     },
   },

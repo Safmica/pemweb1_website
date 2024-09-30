@@ -6,6 +6,25 @@
     <link href="../src/output.css" rel="stylesheet">
     <link rel="icon" href="../assets/head-logo.webp" type="image/x-icon"> 
     <style>
+    body {
+        position: relative;
+        margin: 0;
+        min-height: 100vh;
+    }
+
+    body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('../assets/bg.webp');
+        background-repeat: repeat;
+        background-position: center;
+        opacity: 0.3;
+        z-index: -1;
+    }
         .fade-in {
     opacity: 0;
     transform: translateY(20px); 
@@ -139,12 +158,71 @@
                 </a>  
             </div>
         </div>        
-    </section>
-    <div class="bg-white w-3/4 h-auto flex flex-col items-center justify-center space-y-2 transform -translate-y-1/2 px-">
-        <h3 class="text-2xl font-semibold text-customRed">Achievement</h3>
-        <p class="text-7xl font-extrabold py-1 font-harryPotter">Non Academic</p>
-        <div class="w-20 h-1 bg-customRed"></div>
-    </div>    
+    </section>    
+    <article class="bg-transparent">
+        <div class="bg-white rounded-full w-[75%] p-4 flex flex-col md:flex-row justify-around items-center space-y-8 md:space-y-0 transform -translate-y-1/2 translate-x-[17%] shadow-2xl">
+            <!-- First Card -->
+            <div class="group flex flex-col items-center text-center transition-transform duration-300 transform hover:scale-105 hover:drop-shadow-lg rounded-lg p-4">
+                <img src="../assets/Gryffindor.png" alt="Enroll" class="w-24 h-24 mb-4 transition-transform duration-300 group-hover:scale-105 rounded-lg group-hover:drop-shadow-[0_28px_28px_rgba(174,0,1,0.5)]">
+                <h3 class="text-2xl font-bold text-customRed transition-transform duration-300 group-hover:scale-105 group-hover:drop-shadow-[0_10px_10px_rgba(174,0,1,0.5)]">Gryffindor</h3>
+            </div>
+            <!-- Second Card -->
+            <div class="group flex flex-col items-center text-center transition-transform duration-300 transform hover:scale-105 hover:drop-shadow-lg rounded-lg p-4">
+                <img src="../assets/Slytherin.png" alt="Teach" class="w-24 h-24 mb-4 transition-transform duration-300 group-hover:scale-105 rounded-lg group-hover:drop-shadow-[0_28px_28px_rgba(42,98,61,0.5)]">
+                <h3 class="text-2xl font-bold text-customGreen transition-transform duration-300 group-hover:scale-105 group-hover:drop-shadow-[0_10px_10px_rgba(42,98,61,0.5)]">Slytherin</h3>
+            </div>
+            <!-- Third Card -->
+            <div class="group flex flex-col items-center text-center transition-transform duration-300 transform hover:scale-105 hover:drop-shadow-lg rounded-lg p-4">
+                <img src="../assets/Hufflepuff.png" alt="Alumni" class="w-24 h-24 mb-4 transition-transform duration-300 group-hover:scale-105 rounded-lg group-hover:drop-shadow-[0_28px_28px_rgba(240,199,94,0.5)]">
+                <h3 class="text-2xl font-bold text-customYellow transition-transform duration-300 group-hover:scale-105 group-hover:drop-shadow-[0_10px_10px_rgba(240,199,94,0.5)]">Hufflepuff</h3>
+            </div>
+            <!-- Fourth Card -->
+            <div class="group flex flex-col items-center text-center transition-transform duration-300 transform hover:scale-105 hover:drop-shadow-lg rounded-lg p-4">
+                <img src="../assets/Ravenclaw.png" alt="Support" class="w-24 h-24 mb-4 transition-transform duration-300 group-hover:scale-105 rounded-lg group-hover:drop-shadow-[0_28px_28px_rgba(34,47,91,0.5)]">
+                <h3 class="text-2xl font-bold text-customBlue transition-transform duration-300 group-hover:scale-105 group-hover:drop-shadow-[0_10px_10px_rgba(34,47,91,0.5)]">Ravenclaw</h3>
+            </div>
+        </div>
+        <div class="flex flex-col items-center">
+            <p class="font-harryPotter text-black text-custom-size2">BE WIZARDS WITH HOGWARTS!</p>
+            <p class="font-walkWay text-black text-custom-size1 transform -translate-y-[90px]">s</p>
+        </div>
+        <div class="bg-black w-full h-auto">
+            <div>
+                <img src="../assets/dumbledore-transformed.webp">
+            </div>
+        </div>                        
+        <div class="bg-white w-3/4 h-auto flex flex-col items-center justify-center space-y-2">
+            <div class="bg-gray-50 py-12">
+                <h2 class="text-3xl font-bold text-center text-blue-900 mb-10">Our Impact</h2>
+                <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- First Card -->
+                    <div class="flex flex-col items-center text-center">
+                        <img src="../assets/Hogwarts.webp" alt="High School Graduation Rate" class="w-20 h-20 mb-4">
+                        <h3 class="text-4xl font-bold text-blue-900">92%</h3>
+                        <p class="text-gray-700 mt-2">High School Graduation Rate (2023)</p>
+                    </div>
+                    <!-- Second Card -->
+                    <div class="flex flex-col items-center text-center">
+                        <img src="../assets/Hogwarts.webp" alt="Cal State UC Admissions" class="w-20 h-20 mb-4">
+                        <h3 class="text-4xl font-bold text-blue-900">100%</h3>
+                        <p class="text-gray-700 mt-2">Bright Star Graduates Eligible for Cal State or UC Admissions</p>
+                    </div>
+                    <!-- Third Card -->
+                    <div class="flex flex-col items-center text-center">
+                        <img src="../assets/Hogwarts.webp" alt="Colleges and Universities" class="w-20 h-20 mb-4">
+                        <h3 class="text-4xl font-bold text-blue-900">88%</h3>
+                        <p class="text-gray-700 mt-2">Matriculation to 2- and 4-Year Colleges and Universities (2023)</p>
+                    </div>
+                    <!-- Fourth Card -->
+                    <div class="flex flex-col items-center text-center">
+                        <img src="../assets/Hogwarts.webp" alt="Counseling Minutes" class="w-20 h-20 mb-4">
+                        <h3 class="text-4xl font-bold text-blue-900">1.7 Million</h3>
+                        <p class="text-gray-700 mt-2">Counseling Minutes Yearly to Support Students and Families</p>
+                    </div>
+                </div>
+            </div>        
+        </div>
+    </article>    
     <footer class="w-full bg-gray-950">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3 gap-y-8 md:gap-8 py-8 max-w-sm mx-auto sm:max-w-3xl lg:max-w-full">
