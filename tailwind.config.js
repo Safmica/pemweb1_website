@@ -30,6 +30,7 @@ module.exports = {
         customBlue: '#222f5b',
         customGreen: '#2a623d',
         customYellow: '#f0c75e',
+        customYellow2: '#e7b21b',
         customGrey: '#bebebe',
       },
       fontSize: {
