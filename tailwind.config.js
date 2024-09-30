@@ -27,7 +27,8 @@ module.exports = {
         customGrey: '#bebebe',
       },
       fontSize: {
-        'custom-size': '10rem',
+        'custom-size1': '10rem',
+        'custom-size2': '5rem',
       },
     },
   },

@@ -160,3 +160,8 @@ a:hover, button:hover {
 input[type="text"], textarea {
     cursor: url('../assets/cursor-hover.png'), auto;
 }
+
+.bg-custom-image {
+    @apply bg-cover bg-center;
+    background-image: url('../assets/bg.webp');
+  }
