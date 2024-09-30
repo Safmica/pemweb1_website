@@ -6,6 +6,25 @@
     <link href="../src/output.css" rel="stylesheet">
     <link rel="icon" href="../assets/head-logo.webp" type="image/x-icon">  
     <style>
+        body {
+        position: relative;
+        margin: 0;
+        min-height: 100vh;
+    }
+
+    body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('../assets/bg.webp');
+        background-repeat: repeat;
+        background-position: center;
+        opacity: 0.3;
+        z-index: -1;
+    }
         #content {
             opacity: 0;
             animation: fadeIn 4s forwards 10s;
@@ -51,7 +70,7 @@
         }
     </style>
 </head>
-<body class="bg-gray-100 p-8>
+<body>
     <nav class="bg-white border-gray-200">
         <div class="flex flex-wrap items-center justify-between mx-auto p-2">
             <a class="flex items-center space-x-3 rtl:space-x-reverse">
