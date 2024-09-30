@@ -6,6 +6,10 @@
     <link href="../src/output.css" rel="stylesheet">
     <link rel="icon" href="../assets/head-logo.webp" type="image/x-icon"> 
     <style>
+    html {
+        scroll-behavior: smooth;
+    }
+
     body {
         position: relative;
         margin: 0;
@@ -29,7 +33,7 @@
     .dumbledore {
         position: relative;
         margin: 0;
-        min-height: 100vh;
+        min-height: 20vh;
         z-index:0;
     }
 
@@ -88,6 +92,7 @@
         display: flex; 
     }
 }
+
     </style>
 </head>
 <body>
@@ -101,10 +106,19 @@
             </a>
             <div class="hidden md:flex md:ml-6">
                 <div class="flex space-x-4 nav-links">
-                    <a href="home.html" class="flex rounded-md bg-gray-900 pl-3 px-3 py-2 text-sm font-medium text-white" aria-current="page">
-                        <img src="../assets/small-hogwarts.webp" alt="gambar" class="w-6 h-6 mr-2">
-                        <span>Home</span>
-                    </a>
+                    <div class="flex flex-col group relative">
+                        <a href="home.html" class="flex rounded-md bg-gray-900 pl-3 px-3 py-2 text-sm font-medium text-white" aria-current="page">
+                            <img src="../assets/small-hogwarts.webp" alt="gambar" class="w-6 h-6 mr-2">
+                            <span>Home</span>
+                        </a>
+                        <!-- Submenu -->
+                        <div class="absolute left-0 top-full mt-1 hidden w-48 bg-white shadow-lg rounded-md group-hover:block">
+                            <a href="#intro" class="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-200">Intro</a>
+                            <a href="#impact" class="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-200">Impact</a>
+                            <a href="#objectives" class="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-200">Objectives</a>
+                            <a href="#alumni" class="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-200">Alumni</a>
+                        </div>
+                    </div>
                     <a href="Profile.html" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent hover:bg-customRed hover:text-white transition-colors duration-300">
                         <img src="../assets/Gryffindor.png" alt="gambar" class="w-6 h-6 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <span class="group-hover:text-white">Profile</span>
@@ -122,7 +136,7 @@
                         <span class="group-hover:text-white">Activity</span>
                     </a>
                 </div>
-            </div>
+            </div>           
     
             <div class="lg:hidden flex items-center lg-auto">
                 <input type="checkbox" id="menu-toggle" class="hidden">
@@ -165,11 +179,11 @@
             </div>
         </div>
         <div class="relative px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56 fade-in">
-            <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">We invest in the world’s potential</h1>
-            <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+            <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">We nurture the magic within the world's potential</h1>
+            <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Here at Hogwarts, we focus on nurturing young witches and wizards, where magical talent, innovation, and knowledge can unlock the boundless potential of the wizarding world and shape the future of magical society.</p>
             <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
-                <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
-                    Get started
+                <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-customRed hover:bg-red-600 focus:ring-4 ">
+                    Contact Us
                     <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
                     </svg>
@@ -180,49 +194,49 @@
             </div>
         </div>        
     </section>    
-    <article class="bg-transparent">
-        <div class="bg-white rounded-full w-[75%] p-4 flex flex-col md:flex-row justify-around items-center space-y-8 md:space-y-0 transform -translate-y-1/2 translate-x-[17%] shadow-2xl">
+    <article id="intro" class="bg-transparent">
+        <div class="bg-white rounded-full h-32 sm:w-[75%] sm:h-[50%] sm:p-4 flex flex-row justify-around items-center sm:space-y-8 md:space-y-0 transform -translate-y-1/2 sm:translate-x-[17%] shadow-2xl">
             <!-- First Card -->
             <div class="group flex flex-col items-center text-center transition-transform duration-300 transform hover:scale-105 hover:drop-shadow-lg rounded-lg p-4">
-                <img src="../assets/Gryffindor.png" alt="Enroll" class="w-24 h-24 mb-4 transition-transform duration-300 group-hover:scale-105 rounded-lg group-hover:drop-shadow-[0_28px_28px_rgba(174,0,1,0.5)]">
-                <h3 class="text-2xl font-bold text-customRed transition-transform duration-300 group-hover:scale-105 group-hover:drop-shadow-[0_10px_10px_rgba(174,0,1,0.5)]">Gryffindor</h3>
+                <img src="../assets/Gryffindor.png" alt="Enroll" class="w-10 h-10 mb-4 sm:w-24 sm:h-24 transition-transform duration-300 group-hover:scale-105 rounded-lg group-hover:drop-shadow-[0_28px_28px_rgba(174,0,1,0.5)]">
+                <h3 class="sm:text-2xl font-bold text-customRed transition-transform duration-300 group-hover:scale-105 group-hover:drop-shadow-[0_10px_10px_rgba(174,0,1,0.5)]">Gryffindor</h3>
             </div>
             <!-- Second Card -->
             <div class="group flex flex-col items-center text-center transition-transform duration-300 transform hover:scale-105 hover:drop-shadow-lg rounded-lg p-4">
-                <img src="../assets/Slytherin.png" alt="Teach" class="w-24 h-24 mb-4 transition-transform duration-300 group-hover:scale-105 rounded-lg group-hover:drop-shadow-[0_28px_28px_rgba(42,98,61,0.5)]">
-                <h3 class="text-2xl font-bold text-customGreen transition-transform duration-300 group-hover:scale-105 group-hover:drop-shadow-[0_10px_10px_rgba(42,98,61,0.5)]">Slytherin</h3>
+                <img src="../assets/Slytherin.png" alt="Teach" class="w-10 h-10 mb-4 sm:w-24 sm:h-24 transition-transform duration-300 group-hover:scale-105 rounded-lg group-hover:drop-shadow-[0_28px_28px_rgba(42,98,61,0.5)]">
+                <h3 class="sm:text-2xl font-bold text-customGreen transition-transform duration-300 group-hover:scale-105 group-hover:drop-shadow-[0_10px_10px_rgba(42,98,61,0.5)]">Slytherin</h3>
             </div>
             <!-- Third Card -->
             <div class="group flex flex-col items-center text-center transition-transform duration-300 transform hover:scale-105 hover:drop-shadow-lg rounded-lg p-4">
-                <img src="../assets/Hufflepuff.png" alt="Alumni" class="w-24 h-24 mb-4 transition-transform duration-300 group-hover:scale-105 rounded-lg group-hover:drop-shadow-[0_28px_28px_rgba(240,199,94,0.5)]">
-                <h3 class="text-2xl font-bold text-customYellow transition-transform duration-300 group-hover:scale-105 group-hover:drop-shadow-[0_10px_10px_rgba(240,199,94,0.5)]">Hufflepuff</h3>
+                <img src="../assets/Hufflepuff.png" alt="Alumni" class="w-10 h-10 mb-4 sm:w-24 sm:h-24 transition-transform duration-300 group-hover:scale-105 rounded-lg group-hover:drop-shadow-[0_28px_28px_rgba(240,199,94,0.5)]">
+                <h3 class="sm:text-2xl font-bold text-customYellow transition-transform duration-300 group-hover:scale-105 group-hover:drop-shadow-[0_10px_10px_rgba(240,199,94,0.5)]">Hufflepuff</h3>
             </div>
             <div class="group flex flex-col items-center text-center transition-transform duration-300 transform hover:scale-105 hover:drop-shadow-lg rounded-lg p-4">
-                <img src="../assets/Ravenclaw.png" alt="Support" class="w-24 h-24 mb-4 transition-transform duration-300 group-hover:scale-105 rounded-lg group-hover:drop-shadow-[0_28px_28px_rgba(34,47,91,0.5)]">
-                <h3 class="text-2xl font-bold text-customBlue transition-transform duration-300 group-hover:scale-105 group-hover:drop-shadow-[0_10px_10px_rgba(34,47,91,0.5)]">Ravenclaw</h3>
+                <img src="../assets/Ravenclaw.png" alt="Support" class="w-10 h-10 mb-4 sm:w-24 sm:h-24 transition-transform duration-300 group-hover:scale-105 rounded-lg group-hover:drop-shadow-[0_28px_28px_rgba(34,47,91,0.5)]">
+                <h3 class="sm:text-2xl font-bold text-customBlue transition-transform duration-300 group-hover:scale-105 group-hover:drop-shadow-[0_10px_10px_rgba(34,47,91,0.5)]">Ravenclaw</h3>
             </div>
         </div>
         <div class="flex flex-col items-center">
             <div class="flex flex-row">
-                <p class="font-harryPotter text-customRed text-custom-size2">BE</p>
-                <p class="font-harryPotter text-transparent text-custom-size2">.</p>
-                <p class="font-harryPotter text-customBlue text-custom-size2">WIZARDS</p>
-                <p class="font-harryPotter text-transparent text-custom-size2">.</p>
-                <p class="font-harryPotter text-customYellow text-custom-size2 drop-shadow-xl">WITH</p>
-                <p class="font-harryPotter text-transparent text-custom-size2">.</p>
-                <p class="font-harryPotter text-customGreen text-custom-size2">HOGWARTS!</p>
+                <p class="font-harryPotter text-customRed text-4xl sm:text-custom-size2">BE</p>
+                <p class="font-harryPotter text-transparent text-4xl sm:text-custom-size2">.</p>
+                <p class="font-harryPotter text-customBlue text-4xl sm:text-custom-size2">WIZARDS</p>
+                <p class="font-harryPotter text-transparent text-4xl sm:text-custom-size2">.</p>
+                <p class="font-harryPotter text-customYellow text-4xl sm:text-custom-size2 drop-shadow-xl">WITH</p>
+                <p class="font-harryPotter text-transparent text-4xl sm:text-custom-size2">.</p>
+                <p class="font-harryPotter text-customGreen text-4xl sm:text-custom-size2">HOGWARTS!</p>
             </div>
-            <p class="font-walkWay text-black text-custom-size1 transform -translate-y-[90px]">s</p>
+            <p class="font-walkWay text-black text-8xl sm:text-custom-size1 transform sm:-translate-y-[90px]">s</p>
             <div class="w-[70%] justify-center -translate-y-[120px]">
-                <p class="font-poppins text-customRed text-center text-xl font-bold">At Hogwarts, we ignite the magic in every student! With a focus on academic excellence, enchanting experiences, and lifelong friendships, we prepare young witches and wizards to thrive in and beyond the classroom. Join us and embark on a magical journey that shapes your future!</p>
+                <p class="font-poppins text-customRed text-center sm:text-xl font-bold transform translate-y-24 sm:translate-y-[0px]">At Hogwarts, we ignite the magic in every student! With a focus on academic excellence, enchanting experiences, and lifelong friendships, we prepare young witches and wizards to thrive in and beyond the classroom. Join us and embark on a magical journey that shapes your future!</p>
             </div>
         </div>
-        <div class="bg-black w-full h-auto group flex flex-row dumbledore overflow-hidden justify-center items-center">
-            <div class="h-[500px]">
-                <img src="../assets/dumbledore-transformed.webp" class="w-[1000px]">
+        <div class="bg-black sm:w-full h-20 sm:h-auto group flex flex-row dumbledore overflow-hidden justify-center items-center">
+            <div class="sm:h-[500px] h-[110px]">
+                <img src="../assets/dumbledore-transformed.webp" class="sm:w-[1000px]">
             </div>
-            <div class="w-[1000px] items-center justify-center">
-                <p class="font-ananda opacity-0 text-white text-center text-6xl transition-opacity transform -translate-x-10 duration-1000 group-hover:opacity-100">
+            <div class="sm:w-[1000px] w-[1000px] items-center justify-center">
+                <p class="font-ananda opacity-0 text-white text-center sm:text-6xl transition-opacity transform -translate-x-10 duration-1000 group-hover:opacity-100">
                     We ignite the magic in every student, With a focus on academic excellence
                 </p>
                 <p class="font-poppins opacity-0 text-white text-center text-xl transition-opacity transform -translate-x-10 duration-1000 group-hover:opacity-100">
@@ -230,7 +244,7 @@
                 </p>
             </div>
         </div>                                      
-        <div class=" h-auto flex flex-col items-center justify-around space-y-2 py-6 px-[5%]">
+        <div id="impact" class=" h-auto flex flex-col items-center justify-around space-y-2 py-6 px-[5%]">
             <div class="items-center justify-center py-12">
                 <h2 class="text-4xl font-bold text-center text-blue-900 mb-10">Our Impact</h2>
                 <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -265,8 +279,8 @@
     <div>
         <img src="../assets/castel.webp" class="w-full">
     </div>
-    <div class="bg-black">
-        <h2 class="text-4xl font-bold text-center text-white mb-10">Work Program and Objectives</h2>
+    <div id="objectives" class="bg-black">
+        <h2 class="text-4xl font-bold text-center text-customYellow mb-10">Work Program and Objectives</h2>
         <div class="bg-black flex flex-wrap gap-6 w-auto m-auto py-6 px-[8%] justify-center align-middle">
             <div>
                 <div class="card-container group relative w-[300px] h-[300px] rounded-lg shadow-lg overflow-hidden flex justify-center align-middle" style="background-image: url('../assets/list-1.webp');background-position: center;background-size: cover;">
@@ -280,7 +294,7 @@
                     <div class="text-white h-[150%] font-poppins flex flex-col justify-center align-middle text-center text-sm w-[90%] z-20 transform duration-200 opacity-0 group-hover:opacity-100">
                         <p class="transform -translate-y-[80%]">n every student, With a focus on academic excellence</p>
                         <br>
-                        <a class="font-bold absolute transform translate-x-[120%] translate-y-[240%]">Learn More</a>
+                        <a href="achievement.html" class="font-bold absolute transform translate-x-[120%] translate-y-[240%]">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -296,7 +310,7 @@
                     <div class="text-white h-[150%] font-poppins flex flex-col justify-center align-middle text-center text-sm w-[90%] z-20 transform duration-200 opacity-0 group-hover:opacity-100">
                         <p class="transform -translate-y-[80%]">n every student, With a focus on academic excellence</p>
                         <br>
-                        <a class="font-bold absolute transform translate-x-[120%] translate-y-[240%]">Learn More</a>
+                        <a href="houses.html" class="font-bold absolute transform translate-x-[120%] translate-y-[240%]">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -312,7 +326,7 @@
                     <div class="text-white h-[150%] font-poppins flex flex-col justify-center align-middle text-center text-sm w-[90%] z-20 transform duration-200 opacity-0 group-hover:opacity-100">
                         <p class="transform -translate-y-[80%]">n every student, With a focus on academic excellence</p>
                         <br>
-                        <a class="font-bold absolute transform translate-x-[120%] translate-y-[240%]">Learn More</a>
+                        <a href="activity.html" class="font-bold absolute transform translate-x-[120%] translate-y-[240%]">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -328,7 +342,7 @@
                     <div class="text-white h-[150%] font-poppins flex flex-col justify-center align-middle text-center text-sm w-[90%] z-20 transform duration-200 opacity-0 group-hover:opacity-100">
                         <p class="transform -translate-y-[80%]">n every student, With a focus on academic excellence</p>
                         <br>
-                        <a class="font-bold absolute transform translate-x-[120%] translate-y-[240%]">Learn More</a>
+                        <a href="Profile.html" class="font-bold absolute transform translate-x-[120%] translate-y-[240%]">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -344,7 +358,7 @@
                     <div class="text-white h-[150%] font-poppins flex flex-col justify-center align-middle text-center text-sm w-[90%] z-20 transform duration-200 opacity-0 group-hover:opacity-100">
                         <p class="transform -translate-y-[80%]">n every student, With a focus on academic excellence</p>
                         <br>
-                        <a class="font-bold absolute transform translate-x-[120%] translate-y-[240%]">Learn More</a>
+                        <a href="Profile.html" class="font-bold absolute transform translate-x-[120%] translate-y-[240%]">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -359,7 +373,7 @@
                     <div class="text-white h-[150%] font-poppins flex flex-col justify-center align-middle text-center text-sm w-[90%] z-20 transform duration-200 opacity-0 group-hover:opacity-100">
                         <p class="transform -translate-y-[80%]">n every student, With a focus on academic excellence</p>
                         <br>
-                        <a class="font-bold absolute transform translate-x-[120%] translate-y-[240%]">Learn More</a>
+                        <a href="achievement.html" class="font-bold absolute transform translate-x-[120%] translate-y-[240%]">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -368,43 +382,43 @@
     <div>
         <img src="../assets/grad.webp" class="w-full h-52">
     </div>
-    <h2 class="text-4xl font-bold text-center text-customRed mb-10">Alumni Opinions</h2>
-    <div class="flex flex-col md:flex-row shadow-none items-center justify-center p-8 rounded-lg">
+    <h2 class="text-4xl font-bold text-center text-customGreen mb-10">Alumni Opinions</h2>
+    <div id="alumni" class="flex flex-col md:flex-row shadow-none items-center justify-center p-8 rounded-lg">
         <!-- Image Section -->
         <div class="w-full md:w-1/2 mb-6 md:mb-0">
-            <img src="../assets/bg-dumbledore.webp" alt="Graduates Image" class="rounded-lg">
+            <img src="../assets/voldermort.webp" alt="Graduates Image" class="rounded-lg">
         </div>
         <!-- Text Section -->
         <div class="w-full md:w-1/2 text-center md:text-left p-6">
-            <h2 class="text-2xl font-bold text-blue-900 mb-4">Alumni Support & College Success</h2>
-            <p class="text-gray-700 text-lg mb-4">
-                "It made me feel really good to know there’s someone in my corner. College can be stressful and to know there’s someone at Bright Star pushing me, saying ‘you got this,’ it felt really good to know I have that support."
+            <h2 class="text-2xl font-bold text-customGreen mb-4">Enemy Alumni Defeated by Hogwarts</h2>
+            <p class="customGreen-700 text-lg mb-4">
+                "Hogwarts successfully to create the best wizards candidate. I'M Defeated by Hogwarts's student, that proved if Hogwarts's Student is very GACOR."
             </p>
-            <p class="text-gray-500 italic mb-6">
-                — Bright Star alumnus Jose C., Dartmouth College, Class of 2020
+            <p class="customGreen italic mb-6">
+                — King of Dark Magic, Voldemort, Class of 2010
             </p>
-            <button class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-full">
+            <a class="bg-transparent border-2 border-customGreen hover:bg-customGreen hover:text-white text-black font-semibold py-2 px-4 rounded-full">
                 About Alumni Support
-            </button>
+            </a>
         </div>
     </div>    
     <div class="flex flex-col md:flex-row shadow-none items-center justify-center p-8 rounded-lg">
         <!-- Image Section -->
         <div class="w-full md:w-1/2 mb-6 md:mb-0">
-            <img src="../assets/bg-dumbledore.webp" alt="Graduates Image" class="rounded-lg">
+            <img src="../assets/snape.webp" alt="Graduates Image" class="rounded-lg">
         </div>
         <!-- Text Section -->
         <div class="w-full md:w-1/2 text-center md:text-left p-6">
-            <h2 class="text-2xl font-bold text-blue-900 mb-4">Alumni Support & College Success</h2>
-            <p class="text-gray-700 text-lg mb-4">
-                "It made me feel really good to know there’s someone in my corner. College can be stressful and to know there’s someone at Bright Star pushing me, saying ‘you got this,’ it felt really good to know I have that support."
+            <h2 class="text-2xl font-bold text-customGreen mb-4">Alumni Support & College Success</h2>
+            <p class="text-customGreen text-lg mb-4">
+                "Hogwarts is very skilled at developing young talents, not just a few, but many talented seeds are born from Hogwarts, one of them is me."
             </p>
-            <p class="text-gray-500 italic mb-6">
-                — Bright Star alumnus Jose C., Dartmouth College, Class of 2020
+            <p class="text-customGreen italic mb-6">
+                — Hogwarts's Teacher., Severus Snape, Class of 2016
             </p>
-            <button class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-full">
+            <a class="bg-transparent border-2 border-customGreen hover:bg-customGreen hover:text-white text-black font-semibold py-2 px-4 rounded-full">
                 About Alumni Support
-            </button>
+            </a>
         </div>
     </div>  
     <div>
