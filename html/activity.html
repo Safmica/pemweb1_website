@@ -85,39 +85,87 @@
     </style>
 </head>
 <body>
-    <nav class="bg-white border-gray-200 fixed w-full z-10">
+    <nav class="bg-white border-gray-200 fixed w-full z-50">
         <div class="flex flex-row flex-wrap items-center justify-between mx-auto p-2">
             <a class="flex items-center space-x-3 rtl:space-x-reverse">
-                <img src="../assets/small-hogwarts.webp" class="h-12" alt="Hogwarts Logo" />
+                <img src="../assets/small-hogwarts.webp" class="h-12" loading="lazy" alt="Hogwarts Logo" />
                 <span class="self-center text-4xl font-semibold whitespace-nowrap flex font-harryPotter">
                     <p>HOGWARTS</p>
                 </span>
             </a>
-    
             <div class="hidden md:flex md:ml-6">
                 <div class="flex space-x-4 nav-links">
-                    <a href="home.html" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent hover:bg-black hover:text-white transition-colors duration-300">
-                        <img src="../assets/small-hogwarts.webp" alt="gambar" class="w-6 h-6 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <span>Home</span>
-                    </a>
-                    <a href="Profile.html" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent hover:bg-customRed hover:text-white transition-colors duration-300">
-                        <img src="../assets/Gryffindor.png" alt="gambar" class="w-6 h-6 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <span class="group-hover:text-white">Profile</span>
-                    </a>
-                    <a href="houses.html" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent hover:bg-customGreen hover:text-white transition-colors duration-300">
-                        <img src="../assets/Slytherin.png" alt="gambar" class="w-6 h-6 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <span class="group-hover:text-white">Houses</span>
-                    </a>
-                    <a href="achievement.html" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent hover:bg-customYellow hover:text-white transition-colors duration-300">
-                        <img src="../assets/Hufflepuff.png" alt="gambar" class="w-6 h-6 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <span class="group-hover:text-white">Achievement</span>
-                    </a>
-                    <a href="activity.html" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent hover:bg-customBlue hover:text-white transition-colors duration-300">
-                        <img src="../assets/Ravenclaw.png" alt="gambar" class="w-6 h-6 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <span class="group-hover:text-white">Activity</span>
-                    </a>
+                    <div class="flex flex-col group relative">
+                        <a href="home.html" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent group-hover:bg-black group-hover:text-white transition-colors duration-300">
+                            <img src="../assets/small-hogwarts.webp" alt="gambar" class="w-6 h-6 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span>Home</span>
+                        </a>
+                        <div class="absolute left-0 top-full hidden w-48 bg-white shadow-lg rounded-md group-hover:block">
+                            <a href="home.html#intro" class="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-200">Intro</a>
+                            <a href="home.html#impact" class="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-200">Impact</a>
+                            <a href="home.html#objectives" class="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-200">Objectives</a>
+                            <a href="home.html#alumni" class="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-200">Alumni</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col group relative">
+                        <a href="Profile.html" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent group-hover:bg-customRed group-hover:text-white transition-colors duration-300">
+                            <img src="../assets/Gryffindor.png" alt="gambar" class="w-6 h-6 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="group-hover:text-white">Profile</span>
+                        </a>
+                        <div class="absolute left-0 top-full hidden w-48 bg-white shadow-lg rounded-md group-hover:block">
+                            <a href="Profile.html#about" class="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-200">About</a>
+                            <a href="Profile.html#history" class="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-200">History</a>
+                            <a href="Profile.html#visi_section" class="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-200">Vision Mision</a>
+                            <a href="Profile.html#head_academic" class="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-200">Head of Academic</a>
+                            <a href="Profile.html#educators" class="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-200">Educators</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col group relative">
+                        <a href="houses.html" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent group-hover:bg-customGreen group-hover:text-white transition-colors duration-300">
+                            <img src="../assets/Slytherin.png" alt="gambar" class="w-6 h-6 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="group-hover:text-white">Houses</span>
+                        </a>
+                        <div class="absolute left-0 top-full hidden w-48 bg-white shadow-lg rounded-md group-hover:block">
+                            <a href="gryffindor.html" class="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-200">Gryffindor</a>
+                            <a href="slytherin.html" class="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-200">Slytherin</a>
+                            <a href="ravenclaw.html" class="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-200">Ravenclaw</a>
+                            <a href="hufflepuff.html" class="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-200">Hufflepuff</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col group relative">
+                        <a href="achievement.html" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent group-hover:bg-customYellow group-hover:text-white transition-colors duration-300">
+                            <img src="../assets/Hufflepuff.png" alt="gambar" class="w-6 h-6 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="group-hover:text-white">Achievement</span>
+                        </a>
+                        <div class="absolute left-0 top-full hidden w-48 bg-white shadow-lg rounded-md group-hover:block">
+                            <a href="achievement.html" class="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-200">Academic</a>
+                            <a href="achievement1.html" class="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-200">Non Academic</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col group relative">
+                        <a href="activity.html" class="flex rounded-md bg-customBlue pl-3 px-3 py-2 text-sm font-medium text-white" aria-current="page">
+                            <img src="../assets/Ravenclaw.png" alt="gambar" class="w-6 h-6 mr-2">
+                            <span class="group-hover:text-white">Activity</span>
+                        </a>
+                        <div class="absolute left-0 top-full hidden w-48 bg-white shadow-lg rounded-md group-hover:block">
+                            <a href="club" class="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-200">Club</a>
+                            <a href="festival" class="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-200">Festival</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col group relative">
+                        <a href="contact.html" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent group-hover:bg-gray-600 group-hover:text-white transition-colors duration-300">
+                            <img src="../assets/small-hogwarts.webp" alt="gambar" class="w-6 h-6 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="group-hover:text-white">Contact</span>
+                        </a>
+                    </div>
+                    <div class="flex flex-col group relative">
+                        <a href="team.html" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent group-hover:bg-orange-600 group-hover:text-white transition-colors duration-300">
+                            <img src="../assets/small-hogwarts.webp" alt="gambar" class="w-6 h-6 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="group-hover:text-white">Team</span>
+                        </a>
+                    </div>
                 </div>
-            </div>
+            </div>           
     
             <div class="lg:hidden flex items-center lg-auto">
                 <input type="checkbox" id="menu-toggle" class="hidden">
@@ -126,39 +174,85 @@
                 </label>
     
                 <div class="hidden flex-col space-y-2 p-4 bg-white border border-gray-200 absolute right-0 top-full nav-links" id="menu-content">
-                    <a href="home.html" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-black bg-transparent hover:bg-black hover:text-white transition-colors duration-300">
-                        <img src="../assets/small-hogwarts.webp" alt="gambar" class="w-6 h-6 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <span>Home</span>
-                    </a>
-                    <a href="Profile.html" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent hover:bg-customRed hover:text-white transition-colors duration-300">
-                        <img src="../assets/Gryffindor.png" alt="gambar" class="w-6 h-6 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <span class="group-hover:text-white">Profile</span>
-                    </a>
-                    <a href="houses.html" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent hover:bg-customGreen hover:text-white transition-colors duration-300">
-                        <img src="../assets/Slytherin.png" alt="gambar" class="w-6 h-6 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <span class="group-hover:text-white">Houses</span>
-                    </a>
-                    <a href="achievement.html" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent hover:bg-customYellow hover:text-white transition-colors duration-300">
-                        <img src="../assets/Hufflepuff.png" alt="gambar" class="w-6 h-6 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <span class="group-hover:text-white">Achievement</span>
-                    </a>
-                    <a href="activity.html" class="flex rounded-md bg-customBlue pl-3 px-3 py-2 text-sm font-medium text-white">
-                        <img src="../assets/Ravenclaw.png" alt="gambar" class="w-6 h-6 mr-2">
-                        <span class="group-hover:text-white">Activity</span>
-                    </a>
+                    <div class="flex flex-col space-y-2">
+                        <div class="flex flex-col group relative">
+                            <a href="home.html" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent group-hover:bg-black group-hover:text-white transition-colors duration-300">
+                                <img src="../assets/small-hogwarts.webp" alt="gambar" class="w-6 h-6 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span>Home</span>
+                            </a>
+                            <div class="absolute left-0 top-full hidden w-48 bg-white shadow-lg rounded-md group-hover:block z-30">
+                                <a href="home.html#intro" class="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-200">Intro</a>
+                                <a href="home.html#impact" class="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-200">Impact</a>
+                                <a href="home.html#objectives" class="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-200">Objectives</a>
+                                <a href="home.html#alumni" class="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-200">Alumni</a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col group relative">
+                            <a href="Profile.html" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent group-hover:bg-customRed group-hover:text-white transition-colors duration-300">
+                                <img src="../assets/Gryffindor.png" alt="gambar" class="w-6 h-6 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="group-hover:text-white">Profile</span>
+                            </a>
+                            <div class="absolute left-0 top-full hidden w-48 bg-white shadow-lg rounded-md group-hover:block z-30">
+                                <a href="Profile.html#about" class="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-200">About</a>
+                                <a href="Profile.html#history" class="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-200">History</a>
+                                <a href="Profile.html#visi_section" class="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-200">Vision Mission</a>
+                                <a href="Profile.html#head_academic" class="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-200">Head of Academic</a>
+                                <a href="Profile.html#educators" class="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-200">Educators</a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col group relative">
+                            <a href="houses.html" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent group-hover:bg-customGreen group-hover:text-white transition-colors duration-300">
+                                <img src="../assets/Slytherin.png" alt="gambar" class="w-6 h-6 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="group-hover:text-white">Houses</span>
+                            </a>
+                            <div class="absolute left-0 top-full hidden w-48 bg-white shadow-lg rounded-md group-hover:block z-30">
+                                <a href="gryffindor.html" class="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-200">Gryffindor</a>
+                                <a href="slytherin.html" class="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-200">Slytherin</a>
+                                <a href="ravenclaw.html" class="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-200">Ravenclaw</a>
+                                <a href="hufflepuff.html" class="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-200">Hufflepuff</a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col group relative">
+                            <a href="achievement.html" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent group-hover:bg-customYellow group-hover:text-white transition-colors duration-300">
+                                <img src="../assets/Hufflepuff.png" alt="gambar" class="w-6 h-6 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="group-hover:text-white">Achievement</span>
+                            </a>
+                            <div class="absolute left-0 top-full hidden w-48 bg-white shadow-lg rounded-md group-hover:block z-30">
+                                <a href="achievement.html" class="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-200">Academic</a>
+                                <a href="achievement1.html" class="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-200">Non Academic</a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col group relative">
+                            <a href="activity.html" class="flex items-center rounded-md bg-customBlue pl-3 px-3 py-2 text-sm font-medium text-white">
+                                <img src="../assets/Ravenclaw.png" alt="gambar" class="w-6 h-6 mr-2">
+                                <span class="group-hover:text-white">Activity</span>
+                            </a>
+                            <div class="absolute left-0 top-full hidden w-48 bg-white shadow-lg rounded-md group-hover:block z-30">
+                                <a href="#club" class="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-200">Club</a>
+                                <a href="#festival" class="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-200">Festival</a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col group">
+                            <a href="contact.html" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent group-hover:bg-gray-500 group-hover:text-white transition-colors duration-300">
+                                <img src="../assets/small-hogwarts.webp" alt="gambar" class="w-6 h-6 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="group-hover:text-white">Contact</span>
+                            </a>
+                        </div>
+                        <div class="flex flex-col group">
+                            <a href="team.html" class="group flex items-center rounded-md pl-3 px-3 py-2 text-sm font-medium text-gray-900 bg-transparent group-hover:bg-orange-500 group-hover:text-white transition-colors duration-300">
+                                <img src="../assets/small-hogwarts.webp" alt="gambar" class="w-6 h-6 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="group-hover:text-white">Team</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </nav>
     
     <section class="relative flex flex-col items-center justify-center">
-<<<<<<< HEAD
         <div id="custom-controls-gallery" class="relative w-full h-1/2" data-carousel="slide">
             <img src="../assets/hogwart school (1).webp" loading="lazy" alt="header" class = "w-full h-full">
-=======
-        <div id="custom-controls-gallery" class="relative w-full h-full" data-carousel="slide">
-            <img src="../assets/activity3.webp" alt="header" class = "w-full h-full">
->>>>>>> b72459a6d806b9ab3ee7ac20b5acd8fe239d02f4
         </div>
         <div class="bg-white w-[1000px] h-[150px] flex flex-col items-center justify-center space-y-2 transform -translate-y-1/2">
             <br>
@@ -171,7 +265,6 @@
                 <div class="flex justify-end px-4 pt-4">
                     <div class="flex flex-col items-center pb-10">
                         <img  src="../assets/small-hogwarts.webp" alt="image" class="w-24 h-24 mb-3 rounded-full shadow-lg"/>
-<<<<<<< HEAD
                         <h5 class="mb-1 text-xl font-harryPotter text-customRed-900 dark:text-white">Club</h5>
                         <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400 text-justify">
                             <li>
@@ -189,10 +282,6 @@
                             <li>
                                 The Wizarding Chess Club
                             </li>
-=======
-                        <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">CLUB</h5>
-                        <span class="text-sm text-gray-500 dark:text-gray-400 text-justify">a student organization where members practice and compete in the thrilling wizarding sport of Quidditch, fostering teamwork and camaraderie among the houses.r</span>  
->>>>>>> b72459a6d806b9ab3ee7ac20b5acd8fe239d02f4
                     </div>
                 </div>
             </div>
@@ -226,18 +315,10 @@
         <!-- Card 2 -->
         <div class="card bg-white p-4 rounded-lg shadow-lg overflow-hidden group transition duration-300 group hover:bg-gray-100 hover:shadow-xl mb-32">
             <div class="relative overflow-hidden rounded-lg">
-<<<<<<< HEAD
             <img src="../assets/DA.webp" alt="Dumbledore's Army" loading="lazy" class="rounded-t-lg  object-cover  transform transition-transform duration-300 group-hover:scale-95 group-hover:rotate-3">
             </div>
             <div class="p-4 py-5">
                 <h3 class="text-2xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customYellow py-2">Dumbledore's Army</h3>
-=======
-            <img src="../assets/activity6.webp" alt="Spell Class" class="w-full h- object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-95 group-hover:rotate-3">
-            </div>
-            <div class="p-4 py-5">
-                <h3 class="text-2xl text-center font-semibold mb-2 transition duration-300 group-hover:text-customYellow py-2">Hogwarts Spell Class</h3>
-                <p class="text-gray-600 text-justify">Students delve into the intricacies of spellcasting under the guidance of their knowledgeable professors. This dynamic environment fosters creativity and practice as young witches and wizards learn to wield their wands, explore different charms, and understand the theory behind magical incantations.</p>
->>>>>>> b72459a6d806b9ab3ee7ac20b5acd8fe239d02f4
                 <div class="h-1 bg-gray-300 transition duration-300 group-hover:bg-customYellow"></div>
             </div>
         </div>
@@ -248,12 +329,7 @@
             <img src="../assets/herbology1.webp" alt="Herbology Class" class="w-full h- object-cover rounded-t-lg transform transition-transform duration-300 group-hover:scale-95 group-hover:rotate-3">
             </div>
             <div class="p-4">
-<<<<<<< HEAD
                 <h3 class="text-2xl text-wrap font-semibold mb-2 transition duration-300 group-hover:text-customGreen">The Slug Club</h3>
-=======
-                <h3 class="text-2xl text-wrap font-semibold mb-2 transition duration-300 group-hover:text-customGreen">Discovering the Wonders of Herbology at Hogwarts</h3>
-                <p class="text-gray-600 text-justify">In the Herbology classroom at Hogwarts, students explore the magical properties of plants and fungi. Guided by Professor Sprout, they learn to cultivate and care for various magical flora, from Mandrakes to Puffskeins. </p>
->>>>>>> b72459a6d806b9ab3ee7ac20b5acd8fe239d02f4
                 <div class="h-1 bg-gray-300 transition duration-300 group-hover:bg-customGreen"></div>
             </div>
         </div>
@@ -274,7 +350,6 @@
             <p class="p-4 font-extrabold tracking-tight leading-none text-4xl text-white"> FESTIVAL </p>
             </div>
         </div>
-<<<<<<< HEAD
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
         <img class="h-auto p-36 max-w-lg transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0" src="../assets/halloween.webp" loading="lazy"  " alt="halloween">
         
@@ -288,64 +363,17 @@
 <section>
     <div class="bg-customBlue w-full h-full flex flex-col items-center justify-center">
         <p class="p-4 font-extrabold tracking-tight leading-none text-4xl text-white"> TOURNAMENT </p>
-=======
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 py-8">
-            <div class="grid gap-4">
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="../assets/halloween.webp" alt="halloween">
-                </div>
-            </div>
-            <div class="grid gap-4">
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="../assets/" alt="">
-                </div>
-            </div>
-            <div class="grid gap-4">
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
-                </div>
-            </div>
-            <div class="grid gap-4">
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="">
-                </div>
-            </div>
->>>>>>> b72459a6d806b9ab3ee7ac20b5acd8fe239d02f4
         </div>
 <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
     <div>
         <img class="h-auto max-w-full rounded-lg" src="../assets/tournament1.webp" loading="lazy" alt="image">
     </div>
-<<<<<<< HEAD
     <div>
         <img class="h-auto max-w-full rounded-lg" src="../assets/tournament2.webp" loading="lazy" alt="image">
     </div>
     
     <div>
         <img class="h-auto max-w-full rounded-lg" src="../assets/tournament3.webp" loading="lazy" alt="image">
-=======
-    <div class="grid gap-4">
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="">
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="">
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="">
-        </div>
-    </div>
-    <div class="grid gap-4">
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="">
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="">
-        </div>
->>>>>>> b72459a6d806b9ab3ee7ac20b5acd8fe239d02f4
     </div>
     <div>
         <img class="h-auto max-w-full rounded-lg" src="../assets/tournament4.webp"loading="lazy" alt="image">
